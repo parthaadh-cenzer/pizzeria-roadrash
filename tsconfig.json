@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["es2023", "dom", "dom.iterable", "webworker.importscripts"],
+    "types": ["node", "vite/client"],
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts", "vite.config.ts", "vitest.config.ts"],
+  "exclude": ["src/server/**/*.ts", "src/sw/**/*.ts"]
+}

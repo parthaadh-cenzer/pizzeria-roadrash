@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "rootDir": "src",
+    "outDir": "dist/server"
+  },
+  "include": [
+    "src/server/**/*.ts",
+    "src/room/**/*.ts",
+    "src/shared/**/*.ts",
+    "src/config/**/*.ts",
+    "src/game/**/*.ts",
+    "src/physics/**/*.ts"
+  ],
+  "exclude": [
+    "src/room/hostWorker.ts"
+  ]
+}

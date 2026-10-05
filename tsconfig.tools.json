@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "noEmit": true
+  },
+  "include": [
+    "tools/**/*.ts",
+    "src/shared/**/*.ts",
+    "src/config/**/*.ts",
+    "src/game/**/*.ts"
+  ]
+}

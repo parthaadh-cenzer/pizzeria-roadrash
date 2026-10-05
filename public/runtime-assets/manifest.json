@@ -1,0 +1,3234 @@
+{
+ "manifestVersion": "2026-10-05-37",
+ "pipelineVersion": "1.0.0",
+ "generatedAt": "2026-10-05T21:45:14.226Z",
+ "entries": {
+  "clip.getupBack": {
+   "id": "clip.getupBack",
+   "category": "animation",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Animation/Getting Up (1).fbx",
+     "sha256": "28d5d70e93d6019df9a17d736d4499e26cc4eae12f807615e073ac97c70c4cad",
+     "bytes": 539440
+    }
+   ],
+   "files": {
+    "clip": "anim/getupBack.9b6c8dd2e0.json"
+   },
+   "bytes": 66958,
+   "triangles": 0,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "anim_getup_back: supplied clip starts lying face-up (hips forward = +Y). \"Getting Up (2).fbx\" is animation-identical and unused.",
+    "duration 2.70 s, 82 frames, markers strike=0.57 peakHandSpeed=3.69"
+   ],
+   "clip": {
+    "fps": 30,
+    "duration": 2.7,
+    "frames": 82,
+    "bones": [
+     "hips",
+     "spine",
+     "chest",
+     "upperChest",
+     "neck",
+     "head",
+     "leftShoulder",
+     "leftUpperArm",
+     "leftLowerArm",
+     "leftHand",
+     "rightShoulder",
+     "rightUpperArm",
+     "rightLowerArm",
+     "rightHand",
+     "leftUpperLeg",
+     "leftLowerLeg",
+     "leftFoot",
+     "leftToes",
+     "rightUpperLeg",
+     "rightLowerLeg",
+     "rightFoot",
+     "rightToes"
+    ],
+    "procedural": false,
+    "loop": false
+   }
+  },
+  "clip.getupProne": {
+   "id": "clip.getupProne",
+   "category": "animation",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Animation/Getting Up (1).fbx",
+     "sha256": "28d5d70e93d6019df9a17d736d4499e26cc4eae12f807615e073ac97c70c4cad",
+     "bytes": 539440
+    }
+   ],
+   "files": {
+    "clip": "anim/getupProne.94a0c9dce7.json"
+   },
+   "bytes": 70232,
+   "triangles": 0,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "anim_getup_prone: no face-down source clip supplied; procedural push-up + knee tuck blends into the supplied stand-up phase",
+    "duration 2.90 s, 88 frames, markers standPhaseStart=1.35"
+   ],
+   "clip": {
+    "fps": 30,
+    "duration": 2.9,
+    "frames": 88,
+    "bones": [
+     "hips",
+     "spine",
+     "chest",
+     "upperChest",
+     "neck",
+     "head",
+     "leftShoulder",
+     "leftUpperArm",
+     "leftLowerArm",
+     "leftHand",
+     "rightShoulder",
+     "rightUpperArm",
+     "rightLowerArm",
+     "rightHand",
+     "leftUpperLeg",
+     "leftLowerLeg",
+     "leftFoot",
+     "leftToes",
+     "rightUpperLeg",
+     "rightLowerLeg",
+     "rightFoot",
+     "rightToes"
+    ],
+    "procedural": true,
+    "loop": false
+   }
+  },
+  "clip.run": {
+   "id": "clip.run",
+   "category": "animation",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Animation/Fast Run (1).fbx",
+     "sha256": "4528909ac8fa504ec3465ef75b19f7a5ef244c023179de9dffa9bae93650524c",
+     "bytes": 305616
+    }
+   ],
+   "files": {
+    "clip": "anim/run.2adf1c9977.json"
+   },
+   "bytes": 15502,
+   "triangles": 0,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "run to bike (in place; root motion driven by recovery state)",
+    "duration 0.53 s, 17 frames, markers strike=0.20 peakHandSpeed=7.50"
+   ],
+   "clip": {
+    "fps": 30,
+    "duration": 0.533,
+    "frames": 17,
+    "bones": [
+     "hips",
+     "spine",
+     "chest",
+     "upperChest",
+     "neck",
+     "head",
+     "leftShoulder",
+     "leftUpperArm",
+     "leftLowerArm",
+     "leftHand",
+     "rightShoulder",
+     "rightUpperArm",
+     "rightLowerArm",
+     "rightHand",
+     "leftUpperLeg",
+     "leftLowerLeg",
+     "leftFoot",
+     "leftToes",
+     "rightUpperLeg",
+     "rightLowerLeg",
+     "rightFoot",
+     "rightToes"
+    ],
+    "procedural": false,
+    "loop": true
+   }
+  },
+  "clip.disappointed": {
+   "id": "clip.disappointed",
+   "category": "animation",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Animation/Disappointed.fbx",
+     "sha256": "5aec432c472de1227ee836dd9ee95c523ba9e34336c41a8777388a6af015cc0c",
+     "bytes": 720544
+    }
+   ],
+   "files": {
+    "clip": "anim/disappointed.d38a5540d3.json"
+   },
+   "bytes": 102427,
+   "triangles": 0,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "results 4th+",
+    "duration 4.20 s, 127 frames, markers strike=1.20 peakHandSpeed=4.69"
+   ],
+   "clip": {
+    "fps": 30,
+    "duration": 4.2,
+    "frames": 127,
+    "bones": [
+     "hips",
+     "spine",
+     "chest",
+     "upperChest",
+     "neck",
+     "head",
+     "leftShoulder",
+     "leftUpperArm",
+     "leftLowerArm",
+     "leftHand",
+     "rightShoulder",
+     "rightUpperArm",
+     "rightLowerArm",
+     "rightHand",
+     "leftUpperLeg",
+     "leftLowerLeg",
+     "leftFoot",
+     "leftToes",
+     "rightUpperLeg",
+     "rightLowerLeg",
+     "rightFoot",
+     "rightToes"
+    ],
+    "procedural": false,
+    "loop": true
+   }
+  },
+  "clip.victoryRobot": {
+   "id": "clip.victoryRobot",
+   "category": "animation",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Animation/Robot Hip Hop Dance.fbx",
+     "sha256": "859e08764afbadc469fae16ffc71547883ba41a204f1200ae16b060fbdaf4af1",
+     "bytes": 1529216
+    }
+   ],
+   "files": {
+    "clip": "anim/victoryRobot.14b320db0e.json"
+   },
+   "bytes": 370971,
+   "triangles": 0,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "results #1 (male riders)",
+    "duration 15.43 s, 464 frames, markers strike=0.67 peakHandSpeed=3.18"
+   ],
+   "clip": {
+    "fps": 30,
+    "duration": 15.433,
+    "frames": 464,
+    "bones": [
+     "hips",
+     "spine",
+     "chest",
+     "upperChest",
+     "neck",
+     "head",
+     "leftShoulder",
+     "leftUpperArm",
+     "leftLowerArm",
+     "leftHand",
+     "rightShoulder",
+     "rightUpperArm",
+     "rightLowerArm",
+     "rightHand",
+     "leftUpperLeg",
+     "leftLowerLeg",
+     "leftFoot",
+     "leftToes",
+     "rightUpperLeg",
+     "rightLowerLeg",
+     "rightFoot",
+     "rightToes"
+    ],
+    "procedural": false,
+    "loop": true
+   }
+  },
+  "clip.victorySnake": {
+   "id": "clip.victorySnake",
+   "category": "animation",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Animation/Snake Hip Hop Dance.fbx",
+     "sha256": "238e675257469acc2713b87f9f298a13a9b8ccb885603cbc1f04edf874464000",
+     "bytes": 1394992
+    }
+   ],
+   "files": {
+    "clip": "anim/victorySnake.ed3d25c427.json"
+   },
+   "bytes": 365912,
+   "triangles": 0,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "results #1 (female riders)",
+    "duration 15.27 s, 459 frames, markers strike=11.90 peakHandSpeed=4.26"
+   ],
+   "clip": {
+    "fps": 30,
+    "duration": 15.267,
+    "frames": 459,
+    "bones": [
+     "hips",
+     "spine",
+     "chest",
+     "upperChest",
+     "neck",
+     "head",
+     "leftShoulder",
+     "leftUpperArm",
+     "leftLowerArm",
+     "leftHand",
+     "rightShoulder",
+     "rightUpperArm",
+     "rightLowerArm",
+     "rightHand",
+     "leftUpperLeg",
+     "leftLowerLeg",
+     "leftFoot",
+     "leftToes",
+     "rightUpperLeg",
+     "rightLowerLeg",
+     "rightFoot",
+     "rightToes"
+    ],
+    "procedural": false,
+    "loop": true
+   }
+  },
+  "clip.swordSlash": {
+   "id": "clip.swordSlash",
+   "category": "animation",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Animation/Stable Sword Inward Slash.fbx",
+     "sha256": "4ab02d9dd6c5a36522f15e4f152f80ec89f5b63bd4f3d328ce2e5104705b9c15",
+     "bytes": 440624
+    }
+   ],
+   "files": {
+    "clip": "anim/swordSlash.e66d607072.json"
+   },
+   "bytes": 55460,
+   "triangles": 0,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "upper-body layered for machete / katana / Zabimaru",
+    "duration 2.20 s, 67 frames, markers strike=1.20 peakHandSpeed=8.42"
+   ],
+   "clip": {
+    "fps": 30,
+    "duration": 2.2,
+    "frames": 67,
+    "bones": [
+     "hips",
+     "spine",
+     "chest",
+     "upperChest",
+     "neck",
+     "head",
+     "leftShoulder",
+     "leftUpperArm",
+     "leftLowerArm",
+     "leftHand",
+     "rightShoulder",
+     "rightUpperArm",
+     "rightLowerArm",
+     "rightHand",
+     "leftUpperLeg",
+     "leftLowerLeg",
+     "leftFoot",
+     "leftToes",
+     "rightUpperLeg",
+     "rightLowerLeg",
+     "rightFoot",
+     "rightToes"
+    ],
+    "procedural": false,
+    "loop": false
+   }
+  },
+  "clip.morningStarSwing": {
+   "id": "clip.morningStarSwing",
+   "category": "animation",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Animation/anim_morningstar_swing_r.fbx",
+     "sha256": "b34a30bf536543397c97c7533226f724697580670994d5f8ecb5fc953a6d50c6",
+     "bytes": 426640
+    }
+   ],
+   "files": {
+    "clip": "anim/morningStarSwing.d46f5bc751.json"
+   },
+   "bytes": 51179,
+   "triangles": 0,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "upper-body layered for the morning star",
+    "duration 2.03 s, 62 frames, markers strike=0.87 peakHandSpeed=11.28"
+   ],
+   "clip": {
+    "fps": 30,
+    "duration": 2.033,
+    "frames": 62,
+    "bones": [
+     "hips",
+     "spine",
+     "chest",
+     "upperChest",
+     "neck",
+     "head",
+     "leftShoulder",
+     "leftUpperArm",
+     "leftLowerArm",
+     "leftHand",
+     "rightShoulder",
+     "rightUpperArm",
+     "rightLowerArm",
+     "rightHand",
+     "leftUpperLeg",
+     "leftLowerLeg",
+     "leftFoot",
+     "leftToes",
+     "rightUpperLeg",
+     "rightLowerLeg",
+     "rightFoot",
+     "rightToes"
+    ],
+    "procedural": false,
+    "loop": false
+   }
+  },
+  "clip.cheerClap": {
+   "id": "clip.cheerClap",
+   "category": "animation",
+   "required": true,
+   "source": [],
+   "files": {
+    "clip": "anim/cheerClap.02baf2f8c3.json"
+   },
+   "bytes": 96781,
+   "triangles": 0,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "no Cheer/Clap source clip supplied; procedural loop on the semantic skeleton",
+    "duration 4.00 s, 121 frames, markers cheerStart=1.90 cheerEnd=3.00"
+   ],
+   "clip": {
+    "fps": 30,
+    "duration": 4,
+    "frames": 121,
+    "bones": [
+     "hips",
+     "spine",
+     "chest",
+     "upperChest",
+     "neck",
+     "head",
+     "leftShoulder",
+     "leftUpperArm",
+     "leftLowerArm",
+     "leftHand",
+     "rightShoulder",
+     "rightUpperArm",
+     "rightLowerArm",
+     "rightHand",
+     "leftUpperLeg",
+     "leftLowerLeg",
+     "leftFoot",
+     "leftToes",
+     "rightUpperLeg",
+     "rightLowerLeg",
+     "rightFoot",
+     "rightToes"
+    ],
+    "procedural": true,
+    "loop": true
+   }
+  },
+  "clip.walk": {
+   "id": "clip.walk",
+   "category": "animation",
+   "required": false,
+   "source": [],
+   "files": {
+    "clip": "anim/walk.f15e336dc7.json"
+   },
+   "bytes": 28436,
+   "triangles": 0,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "no Walk source clip supplied; procedural in-place walk on the semantic skeleton",
+    "duration 1.10 s, 34 frames"
+   ],
+   "clip": {
+    "fps": 30,
+    "duration": 1.1,
+    "frames": 34,
+    "bones": [
+     "hips",
+     "spine",
+     "chest",
+     "upperChest",
+     "neck",
+     "head",
+     "leftShoulder",
+     "leftUpperArm",
+     "leftLowerArm",
+     "leftHand",
+     "rightShoulder",
+     "rightUpperArm",
+     "rightLowerArm",
+     "rightHand",
+     "leftUpperLeg",
+     "leftLowerLeg",
+     "leftFoot",
+     "leftToes",
+     "rightUpperLeg",
+     "rightLowerLeg",
+     "rightFoot",
+     "rightToes"
+    ],
+    "procedural": true,
+    "loop": true
+   }
+  },
+  "texture.wetRoad": {
+   "id": "texture.wetRoad",
+   "category": "texture",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/City/post-apocalyptic_city.glb",
+     "sha256": "32348aab8020dcf0381459026a000e2cf7061a17dcd272a0c9e2f5168d76cef2",
+     "bytes": 68791340
+    }
+   ],
+   "files": {
+    "baseColor": "textures/wet_asphalt.baseColor.b8c5bf7ea4.ktx2",
+    "orm": "textures/wet_asphalt.orm.f322a8172f.ktx2",
+    "normal": "textures/wet_asphalt.normal.6ede7db5e3.ktx2"
+   },
+   "bytes": 604002,
+   "triangles": 0,
+   "maxTextureSize": 1024,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "cropped to the band without baked lane markings (rows 7.5%-45.5%); G channel = roughness incl. puddle variation"
+   ],
+   "texture": {
+    "baseColor": "textures/wet_asphalt.baseColor.b8c5bf7ea4.ktx2",
+    "orm": "textures/wet_asphalt.orm.f322a8172f.ktx2",
+    "normal": "textures/wet_asphalt.normal.6ede7db5e3.ktx2",
+    "width": 1024,
+    "height": 512
+   }
+  },
+  "texture.rain": {
+   "id": "texture.rain",
+   "category": "texture",
+   "required": false,
+   "source": [
+    {
+     "path": "Assets/Weather/rain_drops_circles__download__like_please.glb",
+     "sha256": "2c8551e08fcb5fdf5460b69ec76049a84cc7ce8bccaa98b2b866c5d962f4fd87",
+     "bytes": 7343756
+    }
+   ],
+   "files": {
+    "streak": "textures/rain.streak.1d53930596.ktx2",
+    "ripple": "textures/rain.ripple_normal.a38bcb7c9e.ktx2"
+   },
+   "bytes": 1416830,
+   "triangles": 0,
+   "maxTextureSize": 1024,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "streak mask from the alpha of the static rain-plane texture; ripple rings normal map animated by shader"
+   ],
+   "texture": {
+    "alpha": "textures/rain.streak.1d53930596.ktx2",
+    "normal": "textures/rain.ripple_normal.a38bcb7c9e.ktx2",
+    "width": 1024,
+    "height": 1024
+   }
+  },
+  "bike.scifi": {
+   "id": "bike.scifi",
+   "category": "bike",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Bikes/sci-fi_motorcycle.glb",
+     "sha256": "c2a7cbf68c40341534b7e15da03d04fb6c2b9cdbad19837997783628fe91440f",
+     "bytes": 7846960
+    }
+   ],
+   "files": {
+    "lod0": "bikes/bike.scifi.lod0.eeeb4e7305.glb",
+    "lod1": "bikes/bike.scifi.lod1.e3ec8c59b9.glb"
+   },
+   "bytes": 1360436,
+   "triangles": 74858,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "deployed riding configuration baked from the showcase's final keyframes (11 channels: steering arms, grips, dashboard, lights); showcase clip removed",
+    "LOD0 simplified 130335 -> 74858 triangles",
+    "LOD1 31438 triangles"
+   ],
+   "bike": {
+    "length": 2.749,
+    "width": 0.958,
+    "height": 1.033,
+    "hoverHeight": 0,
+    "wheels": [
+     {
+      "node": "wheel_front",
+      "radius": 0.423,
+      "axis": [
+       1,
+       0,
+       0
+      ]
+     },
+     {
+      "node": "wheel_rear",
+      "radius": 0.423,
+      "axis": [
+       1,
+       0,
+       0
+      ]
+     }
+    ],
+    "steerNodes": [
+     "steer_left",
+     "steer_right"
+    ],
+    "spinNodes": [
+     {
+      "node": "spin_1",
+      "axis": [
+       1,
+       0,
+       0
+      ],
+      "rate": 1
+     },
+     {
+      "node": "spin_2",
+      "axis": [
+       1,
+       0,
+       0
+      ],
+      "rate": 1
+     },
+     {
+      "node": "spin_3",
+      "axis": [
+       1,
+       0,
+       0
+      ],
+      "rate": 1
+     },
+     {
+      "node": "spin_4",
+      "axis": [
+       1,
+       0,
+       0
+      ],
+      "rate": 1
+     }
+    ],
+    "emissiveMaterials": [
+     "lightsGlass",
+     "emissionY",
+     "interface"
+    ],
+    "paintMaterials": [
+     "Main",
+     "material",
+     "RedTone",
+     "wires"
+    ],
+    "boostNode": null,
+    "exhaust": [
+     [
+      0,
+      0.45,
+      -1.35
+     ]
+    ],
+    "headlight": [
+     0,
+     0.58,
+     1.25
+    ],
+    "idleClip": null,
+    "mount": {
+     "seatTarget": [
+      0,
+      0.67,
+      0.02
+     ],
+     "leftGripTarget": [
+      0.437,
+      0.701,
+      0.628
+     ],
+     "rightGripTarget": [
+      -0.437,
+      0.701,
+      0.628
+     ],
+     "leftFootTarget": [
+      0.25,
+      0.36,
+      -0.34
+     ],
+     "rightFootTarget": [
+      -0.25,
+      0.36,
+      -0.34
+     ],
+     "mountEntryPoint": [
+      0.85,
+      0,
+      -0.2
+     ],
+     "recoveryApproachPoint": [
+      1.1,
+      0,
+      -0.1
+     ],
+     "mountSide": "left",
+     "ridingSpineLean": 42,
+     "ridingHipRotation": 12,
+     "profile": "sport"
+    }
+   },
+   "animations": [],
+   "materialVariants": [
+    {
+     "name": "Midnight Cyan",
+     "colors": {
+      "paint": "#1b2433",
+      "accent": "#0e5f7a",
+      "emissive": "#18e0ff"
+     }
+    },
+    {
+     "name": "Scarlet Pulse",
+     "colors": {
+      "paint": "#2a0d12",
+      "accent": "#b0142a",
+      "emissive": "#ff2a3a"
+     }
+    },
+    {
+     "name": "Violet Arc",
+     "colors": {
+      "paint": "#1c1230",
+      "accent": "#5b2aa8",
+      "emissive": "#b85cff"
+     }
+    }
+   ]
+  },
+  "bike.akira": {
+   "id": "bike.akira",
+   "category": "bike",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Bikes/akira_class_cruiser.glb",
+     "sha256": "5d3aea230d350c94348186868874cede5babb86dda968f7c733e2adf1401727c",
+     "bytes": 56731612
+    }
+   ],
+   "files": {
+    "lod0": "bikes/bike.akira.lod0.bb13b20883.glb",
+    "lod1": "bikes/bike.akira.lod1.200035ba7f.glb"
+   },
+   "bytes": 2680256,
+   "triangles": 122557,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "watermark decal (Material.028) removed; static meshes merged by material; wheel assemblies kept as pivots",
+    "LOD0 simplified 1412993 -> 122557 triangles",
+    "LOD1 65764 triangles"
+   ],
+   "bike": {
+    "length": 2.9,
+    "width": 0.422,
+    "height": 0.914,
+    "hoverHeight": 0,
+    "wheels": [
+     {
+      "node": "wheel_front",
+      "radius": 0.316,
+      "axis": [
+       1,
+       0,
+       0
+      ]
+     },
+     {
+      "node": "wheel_rear",
+      "radius": 0.316,
+      "axis": [
+       1,
+       0,
+       0
+      ]
+     }
+    ],
+    "steerNodes": [],
+    "spinNodes": [],
+    "emissiveMaterials": [
+     "akira_coil",
+     "glow"
+    ],
+    "paintMaterials": [
+     "material",
+     "Material.004",
+     "Lux_Quilted_Leather"
+    ],
+    "boostNode": null,
+    "exhaust": [
+     [
+      0.18,
+      0.32,
+      -1.42
+     ],
+     [
+      -0.18,
+      0.32,
+      -1.42
+     ]
+    ],
+    "headlight": [
+     0,
+     0.8,
+     1.05
+    ],
+    "idleClip": null,
+    "mount": {
+     "seatTarget": [
+      0,
+      0.44,
+      -0.33
+     ],
+     "leftGripTarget": [
+      0.18,
+      0.64,
+      0.16
+     ],
+     "rightGripTarget": [
+      -0.18,
+      0.64,
+      0.16
+     ],
+     "leftFootTarget": [
+      0.21,
+      0.27,
+      0.12
+     ],
+     "rightFootTarget": [
+      -0.21,
+      0.27,
+      0.12
+     ],
+     "mountEntryPoint": [
+      0.95,
+      0,
+      -0.35
+     ],
+     "recoveryApproachPoint": [
+      1.2,
+      0,
+      -0.2
+     ],
+     "mountSide": "left",
+     "ridingSpineLean": 34,
+     "ridingHipRotation": 6,
+     "profile": "cruiser"
+    }
+   },
+   "animations": [],
+   "materialVariants": [
+    {
+     "name": "Capsule Red",
+     "colors": {
+      "paint": "#9a0c0c",
+      "accent": "#3a0606",
+      "emissive": "#ff3b2a"
+     }
+    },
+    {
+     "name": "Neo White",
+     "colors": {
+      "paint": "#c9ccd6",
+      "accent": "#20242e",
+      "emissive": "#39e8ff"
+     }
+    },
+    {
+     "name": "Toxic Lime",
+     "colors": {
+      "paint": "#2a3a0a",
+      "accent": "#1a1f0a",
+      "emissive": "#b6ff2a"
+     }
+    }
+   ]
+  },
+  "bike.hoveringEngine": {
+   "id": "bike.hoveringEngine",
+   "category": "bike",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Bikes/hovering_engine_motorcycle.glb",
+     "sha256": "0c09cbcf72a804c922b711a40ef149b499867be7449a5405695b78f392b1e003",
+     "bytes": 2969244
+    }
+   ],
+   "files": {
+    "lod0": "bikes/bike.hoveringEngine.lod0.8a55d68792.glb",
+    "lod1": "bikes/bike.hoveringEngine.lod1.2683bb7e8c.glb"
+   },
+   "bytes": 899592,
+   "triangles": 88843,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "static meshes merged; rotating cylinders keep their clips; boost flame tied to cheat boost",
+    "LOD1 23125 triangles"
+   ],
+   "bike": {
+    "length": 2.65,
+    "width": 0.736,
+    "height": 1.06,
+    "hoverHeight": 0.22,
+    "wheels": [],
+    "steerNodes": [
+     "steer_bar"
+    ],
+    "spinNodes": [],
+    "emissiveMaterials": [
+     "Emission_Floater",
+     "Speedo_meter",
+     "boost"
+    ],
+    "paintMaterials": [
+     "Body",
+     "Material.007"
+    ],
+    "boostNode": "boost_flame",
+    "exhaust": [
+     [
+      0,
+      0.62,
+      -1.25
+     ]
+    ],
+    "headlight": [
+     0,
+     0.7,
+     1.2
+    ],
+    "idleClip": "*",
+    "mount": {
+     "seatTarget": [
+      0,
+      0.95,
+      -0.14
+     ],
+     "leftGripTarget": [
+      0.35,
+      1.13,
+      0.19
+     ],
+     "rightGripTarget": [
+      -0.35,
+      1.13,
+      0.19
+     ],
+     "leftFootTarget": [
+      0.34,
+      0.42,
+      0.22
+     ],
+     "rightFootTarget": [
+      -0.34,
+      0.42,
+      0.22
+     ],
+     "mountEntryPoint": [
+      0.85,
+      0,
+      -0.1
+     ],
+     "recoveryApproachPoint": [
+      1.1,
+      0,
+      0
+     ],
+     "mountSide": "left",
+     "ridingSpineLean": 26,
+     "ridingHipRotation": 4,
+     "profile": "hover"
+    }
+   },
+   "animations": [
+    "*"
+   ],
+   "materialVariants": [
+    {
+     "name": "Glacier",
+     "colors": {
+      "paint": "#7fd6e0",
+      "accent": "#0c1a33",
+      "emissive": "#39f0ff"
+     }
+    },
+    {
+     "name": "Solar Orange",
+     "colors": {
+      "paint": "#d8641a",
+      "accent": "#1c1208",
+      "emissive": "#ffb020"
+     }
+    },
+    {
+     "name": "Ghost Magenta",
+     "colors": {
+      "paint": "#cf3aa8",
+      "accent": "#1a0a18",
+      "emissive": "#ff4bd8"
+     }
+    }
+   ]
+  },
+  "bike.hoverRocket": {
+   "id": "bike.hoverRocket",
+   "category": "bike",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Bikes/hover_bike_-_the_rocket.glb",
+     "sha256": "f5ab1de65cf3059800e8782c4a18c811e4fa1aeae9b13ef214a0707b2bf5f90f",
+     "bytes": 40914192
+    }
+   ],
+   "files": {
+    "mask:Test": "bikes/bike.hoverRocket.mask.Test.5c9501d2b5.ktx2",
+    "lod0": "bikes/bike.hoverRocket.lod0.079d1cad11.glb",
+    "lod1": "bikes/bike.hoverRocket.lod1.f243159fa1.glb"
+   },
+   "bytes": 2134292,
+   "triangles": 25246,
+   "maxTextureSize": 1024,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "4x4096 textures reduced to 1024 KTX2; idle clip kept (vents spin, flaps flutter)",
+    "tint mask Test (paint) coverage 57.9%",
+    "LOD1 6430 triangles"
+   ],
+   "bike": {
+    "length": 2.9,
+    "width": 1.418,
+    "height": 0.84,
+    "hoverHeight": 0.3,
+    "wheels": [],
+    "steerNodes": [],
+    "spinNodes": [],
+    "emissiveMaterials": [
+     "Test"
+    ],
+    "paintMaterials": [],
+    "boostNode": null,
+    "exhaust": [
+     [
+      0,
+      0.7,
+      -1.4
+     ]
+    ],
+    "headlight": [
+     0,
+     0.75,
+     1.45
+    ],
+    "idleClip": "idle",
+    "mount": {
+     "seatTarget": [
+      0,
+      0.53,
+      -0.28
+     ],
+     "leftGripTarget": [
+      0.37,
+      0.93,
+      0.17
+     ],
+     "rightGripTarget": [
+      -0.37,
+      0.93,
+      0.17
+     ],
+     "leftFootTarget": [
+      0.37,
+      0.5,
+      0.44
+     ],
+     "rightFootTarget": [
+      -0.37,
+      0.5,
+      0.44
+     ],
+     "mountEntryPoint": [
+      1,
+      0,
+      -0.2
+     ],
+     "recoveryApproachPoint": [
+      1.3,
+      0,
+      -0.1
+     ],
+     "mountSide": "left",
+     "ridingSpineLean": 4,
+     "ridingHipRotation": -10,
+     "profile": "hover"
+    }
+   },
+   "animations": [
+    "idle"
+   ],
+   "materialVariants": [
+    {
+     "name": "Factory",
+     "colors": {
+      "paint": "#ffffff",
+      "accent": "#ffffff",
+      "emissive": "#ffffff"
+     }
+    },
+    {
+     "name": "Arctic Hue",
+     "colors": {
+      "paint": "#6fd8ff",
+      "accent": "#ffffff",
+      "emissive": "#39e8ff"
+     }
+    },
+    {
+     "name": "Ember Hue",
+     "colors": {
+      "paint": "#ff7a2a",
+      "accent": "#ffffff",
+      "emissive": "#ff5a1a"
+     }
+    }
+   ]
+  },
+  "bike.tron": {
+   "id": "bike.tron",
+   "category": "bike",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Bikes/tron_uprising_-_argoncity_light_cycle.glb",
+     "sha256": "8cb3f8ae9c5000e6f427a72c6fd967433f80c39bf62ab551d05a7fa541e1ccd6",
+     "bytes": 1903880
+    }
+   ],
+   "files": {
+    "lod0": "bikes/bike.tron.lod0.75c6ce51a4.glb",
+    "lod1": "bikes/bike.tron.lod1.1d31325ab0.glb"
+   },
+   "bytes": 442852,
+   "triangles": 34808,
+   "maxTextureSize": 512,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "rear-engine spin clip replaced by procedural spin",
+    "LOD1 5938 triangles"
+   ],
+   "bike": {
+    "length": 2.6,
+    "width": 0.678,
+    "height": 1.03,
+    "hoverHeight": 0,
+    "wheels": [
+     {
+      "node": "wheel_front",
+      "radius": 0.392,
+      "axis": [
+       1,
+       0,
+       0
+      ]
+     },
+     {
+      "node": "wheel_rear",
+      "radius": 0.387,
+      "axis": [
+       1,
+       0,
+       0
+      ]
+     }
+    ],
+    "steerNodes": [
+     "steer_left",
+     "steer_right"
+    ],
+    "spinNodes": [
+     {
+      "node": "spin_engine",
+      "axis": [
+       1,
+       0,
+       0
+      ],
+      "rate": 1
+     }
+    ],
+    "emissiveMaterials": [
+     "Glow"
+    ],
+    "paintMaterials": [],
+    "boostNode": null,
+    "exhaust": [
+     [
+      0,
+      0.4,
+      -1.28
+     ]
+    ],
+    "headlight": [
+     0,
+     0.62,
+     1.3
+    ],
+    "idleClip": null,
+    "mount": {
+     "seatTarget": [
+      0,
+      0.66,
+      -0.34
+     ],
+     "leftGripTarget": [
+      0.2,
+      0.78,
+      0.75
+     ],
+     "rightGripTarget": [
+      -0.2,
+      0.78,
+      0.75
+     ],
+     "leftFootTarget": [
+      0.17,
+      0.4,
+      -0.88
+     ],
+     "rightFootTarget": [
+      -0.17,
+      0.4,
+      -0.88
+     ],
+     "mountEntryPoint": [
+      0.8,
+      0,
+      -0.2
+     ],
+     "recoveryApproachPoint": [
+      1.05,
+      0,
+      -0.1
+     ],
+     "mountSide": "left",
+     "ridingSpineLean": 68,
+     "ridingHipRotation": 22,
+     "profile": "prone"
+    }
+   },
+   "animations": [],
+   "materialVariants": [
+    {
+     "name": "Grid Orange",
+     "colors": {
+      "paint": "#0b0d12",
+      "accent": "#0b0d12",
+      "emissive": "#ff6a1a"
+     }
+    },
+    {
+     "name": "User Cyan",
+     "colors": {
+      "paint": "#0b0d12",
+      "accent": "#0b0d12",
+      "emissive": "#1ae4ff"
+     }
+    },
+    {
+     "name": "Program Red",
+     "colors": {
+      "paint": "#0b0d12",
+      "accent": "#0b0d12",
+      "emissive": "#ff1f3a"
+     }
+    }
+   ]
+  },
+  "bike.monobike": {
+   "id": "bike.monobike",
+   "category": "bike",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Bikes/monobike_-_toriyama_dragonseeker.glb",
+     "sha256": "f01229c48f9f78e33b1c21ad24f79b554f2932ec25874271beb683926b729ee7",
+     "bytes": 38768744
+    }
+   ],
+   "files": {
+    "mask:Monobike_U1": "bikes/bike.monobike.mask.Monobike_U1.7f0012a114.ktx2",
+    "mask:Monobike_U2": "bikes/bike.monobike.mask.Monobike_U2.530165e616.ktx2",
+    "lod0": "bikes/bike.monobike.lod0.2dee5722bb.glb",
+    "lod1": "bikes/bike.monobike.lod1.044e8c6bec.glb"
+   },
+   "bytes": 5188983,
+   "triangles": 47422,
+   "maxTextureSize": 1024,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "tyre/rim split into pivoted node wheel_main (10082 triangles)",
+    "tint mask Monobike_U1 (paint) coverage 38.4%",
+    "tint mask Monobike_U2 (paint) coverage 51.8%",
+    "LOD1 11854 triangles"
+   ],
+   "bike": {
+    "length": 2,
+    "width": 1.096,
+    "height": 1.777,
+    "hoverHeight": 0,
+    "wheels": [
+     {
+      "node": "wheel_main",
+      "radius": 0.689,
+      "axis": [
+       1,
+       0,
+       0
+      ]
+     }
+    ],
+    "steerNodes": [],
+    "spinNodes": [],
+    "emissiveMaterials": [
+     "Monobike_U2"
+    ],
+    "paintMaterials": [],
+    "boostNode": null,
+    "exhaust": [
+     [
+      0,
+      0.9,
+      -0.95
+     ]
+    ],
+    "headlight": [
+     0,
+     1.1,
+     0.9
+    ],
+    "idleClip": null,
+    "mount": {
+     "seatTarget": [
+      0,
+      1.42,
+      -0.47
+     ],
+     "leftGripTarget": [
+      0.42,
+      1.44,
+      0.36
+     ],
+     "rightGripTarget": [
+      -0.42,
+      1.44,
+      0.36
+     ],
+     "leftFootTarget": [
+      0.3,
+      0.98,
+      -0.12
+     ],
+     "rightFootTarget": [
+      -0.3,
+      0.98,
+      -0.12
+     ],
+     "mountEntryPoint": [
+      0.9,
+      0,
+      -0.2
+     ],
+     "recoveryApproachPoint": [
+      1.2,
+      0,
+      -0.1
+     ],
+     "mountSide": "left",
+     "ridingSpineLean": 34,
+     "ridingHipRotation": 8,
+     "profile": "monowheel"
+    }
+   },
+   "animations": [],
+   "materialVariants": [
+    {
+     "name": "Rust Orange",
+     "colors": {
+      "paint": "#ffffff",
+      "accent": "#ffffff",
+      "emissive": "#ff8a2a"
+     }
+    },
+    {
+     "name": "Sea Teal",
+     "colors": {
+      "paint": "#39d6c8",
+      "accent": "#ffffff",
+      "emissive": "#39e8ff"
+     }
+    },
+    {
+     "name": "Royal Violet",
+     "colors": {
+      "paint": "#9a5cff",
+      "accent": "#ffffff",
+      "emissive": "#c06cff"
+     }
+    }
+   ]
+  },
+  "rider.blackguard": {
+   "id": "rider.blackguard",
+   "category": "rider",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Characters/tron_uprising_blackguard.glb",
+     "sha256": "c7b19ce31cdb6b1c41d268985f68fe47aa245e1570489f9ef826876c002d5488",
+     "bytes": 13734276
+    }
+   ],
+   "files": {
+    "lod0": "riders/rider.blackguard.lod0.dd0578bc8e.glb",
+    "lod1": "riders/rider.blackguard.lod1.ef9383d9ed.glb"
+   },
+   "bytes": 3319804,
+   "triangles": 71507,
+   "maxTextureSize": 1024,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "retarget map (mixamo): hips<-mixamorig:Hips_01, spine<-mixamorig:Spine_02, chest<-mixamorig:Spine1_03, upperChest<-mixamorig:Spine2_04, neck<-mixamorig:Neck_05, head<-mixamorig:Head_06, leftShoulder<-mixamorig:LeftShoulder_08, leftUpperArm<-mixamorig:LeftArm_09, leftLowerArm<-mixamorig:LeftForeArm_010, leftHand<-mixamorig:LeftHand_011, rightShoulder<-mixamorig:RightShoulder_032, rightUpperArm<-mixamorig:RightArm_033, rightLowerArm<-mixamorig:RightForeArm_034, rightHand<-mixamorig:RightHand_035, leftUpperLeg<-mixamorig:LeftUpLeg_056, leftLowerLeg<-mixamorig:LeftLeg_057, leftFoot<-mixamorig:LeftFoot_00, leftToes<-mixamorig:LeftToeBase_058, rightUpperLeg<-mixamorig:RightUpLeg_060, rightLowerLeg<-mixamorig:RightLeg_061, rightFoot<-mixamorig:RightFoot_062, rightToes<-mixamorig:RightToeBase_063",
+    "removed source nodes: Object_9, Object_11, Object_13, Object_14",
+    "LOD1 25026 triangles"
+   ],
+   "rider": {
+    "height": 1.86,
+    "retargetMap": {
+     "hips": "hips",
+     "spine": "spine",
+     "chest": "chest",
+     "upperChest": "upperChest",
+     "neck": "neck",
+     "head": "head",
+     "leftShoulder": "leftShoulder",
+     "leftUpperArm": "leftUpperArm",
+     "leftLowerArm": "leftLowerArm",
+     "leftHand": "leftHand",
+     "rightShoulder": "rightShoulder",
+     "rightUpperArm": "rightUpperArm",
+     "rightLowerArm": "rightLowerArm",
+     "rightHand": "rightHand",
+     "leftUpperLeg": "leftUpperLeg",
+     "leftLowerLeg": "leftLowerLeg",
+     "leftFoot": "leftFoot",
+     "leftToes": "leftToes",
+     "rightUpperLeg": "rightUpperLeg",
+     "rightLowerLeg": "rightLowerLeg",
+     "rightFoot": "rightFoot",
+     "rightToes": "rightToes",
+     "leftThumb1": "leftThumb1",
+     "leftThumb2": "leftThumb2",
+     "leftThumb3": "leftThumb3",
+     "leftIndex1": "leftIndex1",
+     "leftIndex2": "leftIndex2",
+     "leftIndex3": "leftIndex3",
+     "leftMiddle1": "leftMiddle1",
+     "leftMiddle2": "leftMiddle2",
+     "leftMiddle3": "leftMiddle3",
+     "leftRing1": "leftRing1",
+     "leftRing2": "leftRing2",
+     "leftRing3": "leftRing3",
+     "leftPinky1": "leftPinky1",
+     "leftPinky2": "leftPinky2",
+     "leftPinky3": "leftPinky3",
+     "rightThumb1": "rightThumb1",
+     "rightThumb2": "rightThumb2",
+     "rightThumb3": "rightThumb3",
+     "rightIndex1": "rightIndex1",
+     "rightIndex2": "rightIndex2",
+     "rightIndex3": "rightIndex3",
+     "rightMiddle1": "rightMiddle1",
+     "rightMiddle2": "rightMiddle2",
+     "rightMiddle3": "rightMiddle3",
+     "rightRing1": "rightRing1",
+     "rightRing2": "rightRing2",
+     "rightRing3": "rightRing3",
+     "rightPinky1": "rightPinky1",
+     "rightPinky2": "rightPinky2",
+     "rightPinky3": "rightPinky3"
+    },
+    "rigKind": "mixamo",
+    "hiddenNodes": [
+     "Object_9",
+     "Object_11",
+     "Object_13",
+     "Object_14"
+    ],
+    "handBone": "rightHand",
+    "skinMaterials": [],
+    "tintMaterials": [],
+    "rightHandGripOffset": [
+     0,
+     0,
+     0
+    ]
+   },
+   "materialVariants": [
+    {
+     "name": "Grid Cyan",
+     "colors": {
+      "primary": "#20242c",
+      "secondary": "#11141a",
+      "emissive": "#1ae4ff"
+     }
+    },
+    {
+     "name": "Rogue Orange",
+     "colors": {
+      "primary": "#26201c",
+      "secondary": "#15110e",
+      "emissive": "#ff7a1a"
+     }
+    },
+    {
+     "name": "Crimson Code",
+     "colors": {
+      "primary": "#2a1c1e",
+      "secondary": "#170e10",
+      "emissive": "#ff2a45"
+     }
+    }
+   ]
+  },
+  "rider.scarlet": {
+   "id": "rider.scarlet",
+   "category": "rider",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Characters/scarlet_proxy__free_sci-fi_charchter_riged.glb",
+     "sha256": "fcfabedbe51bf26582956be5e36d28ff589787b15fa2e5afe3454efb802cfbb7",
+     "bytes": 9062576
+    }
+   ],
+   "files": {
+    "mask:KJ_Mat.002": "riders/rider.scarlet.mask.KJ_Mat_002.c0dc1f9310.ktx2",
+    "lod0": "riders/rider.scarlet.lod0.734155770d.glb",
+    "lod1": "riders/rider.scarlet.lod1.f9eeeec800.glb"
+   },
+   "bytes": 5088751,
+   "triangles": 27195,
+   "maxTextureSize": 1024,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "retarget map (custom): hips<-root.x_01, spine<-spine_01.x_03, chest<-spine_02.x_04, upperChest<-spine_03.x_05, neck<-neck.x_06, head<-head.x_07, leftShoulder<-shoulder.l_038, leftUpperArm<-arm_stretch.l_039, leftLowerArm<-forearm_stretch.l_041, leftHand<-hand.l_043, rightShoulder<-shoulder.r_059, rightUpperArm<-arm_stretch.r_060, rightLowerArm<-forearm_stretch.r_062, rightHand<-hand.r_064, leftUpperLeg<-thigh_stretch.l_080, leftLowerLeg<-leg_stretch.l_081, leftFoot<-foot.l_082, leftToes<-toes_01.l_083, rightUpperLeg<-thigh_stretch.r_086, rightLowerLeg<-leg_stretch.r_087, rightFoot<-foot.r_088, rightToes<-toes_01.r_089",
+    "removed source nodes: Object_15",
+    "tint mask KJ_Mat.002 (nonSkin) coverage 1.2%",
+    "LOD1 9517 triangles"
+   ],
+   "rider": {
+    "height": 1.72,
+    "retargetMap": {
+     "hips": "hips",
+     "spine": "spine",
+     "chest": "chest",
+     "upperChest": "upperChest",
+     "neck": "neck",
+     "head": "head",
+     "leftShoulder": "leftShoulder",
+     "leftUpperArm": "leftUpperArm",
+     "leftLowerArm": "leftLowerArm",
+     "leftHand": "leftHand",
+     "rightShoulder": "rightShoulder",
+     "rightUpperArm": "rightUpperArm",
+     "rightLowerArm": "rightLowerArm",
+     "rightHand": "rightHand",
+     "leftUpperLeg": "leftUpperLeg",
+     "leftLowerLeg": "leftLowerLeg",
+     "leftFoot": "leftFoot",
+     "leftToes": "leftToes",
+     "rightUpperLeg": "rightUpperLeg",
+     "rightLowerLeg": "rightLowerLeg",
+     "rightFoot": "rightFoot",
+     "rightToes": "rightToes",
+     "leftThumb1": "leftThumb1",
+     "leftThumb2": "leftThumb2",
+     "leftThumb3": "leftThumb3",
+     "leftIndex1": "leftIndex1",
+     "leftIndex2": "leftIndex2",
+     "leftIndex3": "leftIndex3",
+     "leftMiddle1": "leftMiddle1",
+     "leftMiddle2": "leftMiddle2",
+     "leftMiddle3": "leftMiddle3",
+     "leftRing1": "leftRing1",
+     "leftRing2": "leftRing2",
+     "leftRing3": "leftRing3",
+     "leftPinky1": "leftPinky1",
+     "leftPinky2": "leftPinky2",
+     "leftPinky3": "leftPinky3",
+     "rightThumb1": "rightThumb1",
+     "rightThumb2": "rightThumb2",
+     "rightThumb3": "rightThumb3",
+     "rightIndex1": "rightIndex1",
+     "rightIndex2": "rightIndex2",
+     "rightIndex3": "rightIndex3",
+     "rightMiddle1": "rightMiddle1",
+     "rightMiddle2": "rightMiddle2",
+     "rightMiddle3": "rightMiddle3",
+     "rightRing1": "rightRing1",
+     "rightRing2": "rightRing2",
+     "rightRing3": "rightRing3",
+     "rightPinky1": "rightPinky1",
+     "rightPinky2": "rightPinky2",
+     "rightPinky3": "rightPinky3"
+    },
+    "rigKind": "custom",
+    "hiddenNodes": [
+     "Object_15"
+    ],
+    "handBone": "rightHand",
+    "skinMaterials": [],
+    "tintMaterials": [
+     "Hair"
+    ],
+    "rightHandGripOffset": [
+     0,
+     0,
+     0
+    ]
+   },
+   "materialVariants": [
+    {
+     "name": "Scarlet",
+     "colors": {
+      "primary": "#d01a2a",
+      "secondary": "#2a0d12",
+      "emissive": "#ff2a4a"
+     }
+    },
+    {
+     "name": "Cobalt",
+     "colors": {
+      "primary": "#1a4ad0",
+      "secondary": "#0d122a",
+      "emissive": "#3aa8ff"
+     }
+    },
+    {
+     "name": "Venom",
+     "colors": {
+      "primary": "#1ad06a",
+      "secondary": "#0d2a18",
+      "emissive": "#3aff9a"
+     }
+    }
+   ]
+  },
+  "rider.mohawk": {
+   "id": "rider.mohawk",
+   "category": "rider",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Characters/readyplayerme_cyberpunk.glb",
+     "sha256": "cde6cd4d6a92a5b604b08449165a97d3e52112295255543429b85fe144962306",
+     "bytes": 5613180
+    }
+   ],
+   "files": {
+    "lod0": "riders/rider.mohawk.lod0.b425901f30.glb",
+    "lod1": "riders/rider.mohawk.lod1.438e20ae5e.glb"
+   },
+   "bytes": 4800756,
+   "triangles": 18509,
+   "maxTextureSize": 1024,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "retarget map (mixamo): hips<-Hips_64, spine<-Spine_53, chest<-Spine1_52, upperChest<-Spine2_51, neck<-Neck_2, head<-Head_1, leftShoulder<-LeftShoulder_26, leftUpperArm<-LeftArm_25, leftLowerArm<-LeftForeArm_24, leftHand<-LeftHand_23, rightShoulder<-RightShoulder_50, rightUpperArm<-RightArm_49, rightLowerArm<-RightForeArm_48, rightHand<-RightHand_47, leftUpperLeg<-LeftUpLeg_58, leftLowerLeg<-LeftLeg_57, leftFoot<-LeftFoot_56, leftToes<-LeftToeBase_55, rightUpperLeg<-RightUpLeg_63, rightLowerLeg<-RightLeg_62, rightFoot<-RightFoot_61, rightToes<-RightToeBase_60",
+    "no source nodes removed",
+    "LOD1 6566 triangles"
+   ],
+   "rider": {
+    "height": 1.84,
+    "retargetMap": {
+     "hips": "hips",
+     "spine": "spine",
+     "chest": "chest",
+     "upperChest": "upperChest",
+     "neck": "neck",
+     "head": "head",
+     "leftShoulder": "leftShoulder",
+     "leftUpperArm": "leftUpperArm",
+     "leftLowerArm": "leftLowerArm",
+     "leftHand": "leftHand",
+     "rightShoulder": "rightShoulder",
+     "rightUpperArm": "rightUpperArm",
+     "rightLowerArm": "rightLowerArm",
+     "rightHand": "rightHand",
+     "leftUpperLeg": "leftUpperLeg",
+     "leftLowerLeg": "leftLowerLeg",
+     "leftFoot": "leftFoot",
+     "leftToes": "leftToes",
+     "rightUpperLeg": "rightUpperLeg",
+     "rightLowerLeg": "rightLowerLeg",
+     "rightFoot": "rightFoot",
+     "rightToes": "rightToes",
+     "leftThumb1": "leftThumb1",
+     "leftThumb2": "leftThumb2",
+     "leftThumb3": "leftThumb3",
+     "leftIndex1": "leftIndex1",
+     "leftIndex2": "leftIndex2",
+     "leftIndex3": "leftIndex3",
+     "leftMiddle1": "leftMiddle1",
+     "leftMiddle2": "leftMiddle2",
+     "leftMiddle3": "leftMiddle3",
+     "leftRing1": "leftRing1",
+     "leftRing2": "leftRing2",
+     "leftRing3": "leftRing3",
+     "leftPinky1": "leftPinky1",
+     "leftPinky2": "leftPinky2",
+     "leftPinky3": "leftPinky3",
+     "rightThumb1": "rightThumb1",
+     "rightThumb2": "rightThumb2",
+     "rightThumb3": "rightThumb3",
+     "rightIndex1": "rightIndex1",
+     "rightIndex2": "rightIndex2",
+     "rightIndex3": "rightIndex3",
+     "rightMiddle1": "rightMiddle1",
+     "rightMiddle2": "rightMiddle2",
+     "rightMiddle3": "rightMiddle3",
+     "rightRing1": "rightRing1",
+     "rightRing2": "rightRing2",
+     "rightRing3": "rightRing3",
+     "rightPinky1": "rightPinky1",
+     "rightPinky2": "rightPinky2",
+     "rightPinky3": "rightPinky3"
+    },
+    "rigKind": "mixamo",
+    "hiddenNodes": [],
+    "handBone": "rightHand",
+    "skinMaterials": [],
+    "tintMaterials": [
+     "Wolf3D_Outfit_Top",
+     "Wolf3D_Outfit_Bottom",
+     "Wolf3D_Hair"
+    ],
+    "rightHandGripOffset": [
+     0,
+     0,
+     0
+    ]
+   },
+   "materialVariants": [
+    {
+     "name": "Hot Pink",
+     "colors": {
+      "primary": "#ff4fb8",
+      "secondary": "#5a2a86",
+      "emissive": "#ff4fd8"
+     }
+    },
+    {
+     "name": "Acid Green",
+     "colors": {
+      "primary": "#8aff3a",
+      "secondary": "#1f3a1a",
+      "emissive": "#8aff3a"
+     }
+    },
+    {
+     "name": "Ice Blue",
+     "colors": {
+      "primary": "#4fd8ff",
+      "secondary": "#1a2a5a",
+      "emissive": "#4fd8ff"
+     }
+    }
+   ]
+  },
+  "rider.enforcer": {
+   "id": "rider.enforcer",
+   "category": "rider",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Characters/cyberpunk_character.glb",
+     "sha256": "d2f3e41be8ee3d026270d6ce184252e7e6ed6bb080ac10510b273d1f1f00fe1d",
+     "bytes": 78584864
+    }
+   ],
+   "files": {
+    "mask:material": "riders/rider.enforcer.mask.material.158dac5545.ktx2",
+    "mask:material_3": "riders/rider.enforcer.mask.material_3.59a5fc5263.ktx2",
+    "lod0": "riders/rider.enforcer.lod0.08ff93adf9.glb",
+    "lod1": "riders/rider.enforcer.lod1.431d097ea0.glb"
+   },
+   "bytes": 3860081,
+   "triangles": 24500,
+   "maxTextureSize": 1024,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "retarget map (custom): hips<-hips_00, spine<-spine1_01, chest<-spine2_02, upperChest<-spine3_03, neck<-neck_04, head<-head_05, leftShoulder<-l shoulder_027, leftUpperArm<-l arm_028, leftLowerArm<-l forearm_029, leftHand<-l hand_030, rightShoulder<-r shoulder_08, rightUpperArm<-r arm_09, rightLowerArm<-r forearm_010, rightHand<-r hand_011, leftUpperLeg<-l leg_047, leftLowerLeg<-l knee_048, leftFoot<-l foot_049, leftToes<-l toes_050, rightUpperLeg<-r leg_051, rightLowerLeg<-r knee_052, rightFoot<-r foot_053, rightToes<-r toes_054",
+    "no source nodes removed",
+    "tint mask material (dye) coverage 99.9%",
+    "tint mask material_3 (dye) coverage 86.3%",
+    "LOD1 8570 triangles"
+   ],
+   "rider": {
+    "height": 1.88,
+    "retargetMap": {
+     "hips": "hips",
+     "spine": "spine",
+     "chest": "chest",
+     "upperChest": "upperChest",
+     "neck": "neck",
+     "head": "head",
+     "leftShoulder": "leftShoulder",
+     "leftUpperArm": "leftUpperArm",
+     "leftLowerArm": "leftLowerArm",
+     "leftHand": "leftHand",
+     "rightShoulder": "rightShoulder",
+     "rightUpperArm": "rightUpperArm",
+     "rightLowerArm": "rightLowerArm",
+     "rightHand": "rightHand",
+     "leftUpperLeg": "leftUpperLeg",
+     "leftLowerLeg": "leftLowerLeg",
+     "leftFoot": "leftFoot",
+     "leftToes": "leftToes",
+     "rightUpperLeg": "rightUpperLeg",
+     "rightLowerLeg": "rightLowerLeg",
+     "rightFoot": "rightFoot",
+     "rightToes": "rightToes",
+     "leftThumb1": "leftThumb1",
+     "leftThumb2": "leftThumb2",
+     "leftThumb3": "leftThumb3",
+     "leftIndex1": "leftIndex1",
+     "leftIndex2": "leftIndex2",
+     "leftIndex3": "leftIndex3",
+     "leftMiddle1": "leftMiddle1",
+     "leftMiddle2": "leftMiddle2",
+     "leftMiddle3": "leftMiddle3",
+     "leftRing1": "leftRing1",
+     "leftRing2": "leftRing2",
+     "leftRing3": "leftRing3",
+     "leftPinky1": "leftPinky1",
+     "leftPinky2": "leftPinky2",
+     "leftPinky3": "leftPinky3",
+     "rightThumb1": "rightThumb1",
+     "rightThumb2": "rightThumb2",
+     "rightThumb3": "rightThumb3",
+     "rightIndex1": "rightIndex1",
+     "rightIndex2": "rightIndex2",
+     "rightIndex3": "rightIndex3",
+     "rightMiddle1": "rightMiddle1",
+     "rightMiddle2": "rightMiddle2",
+     "rightMiddle3": "rightMiddle3",
+     "rightRing1": "rightRing1",
+     "rightRing2": "rightRing2",
+     "rightRing3": "rightRing3",
+     "rightPinky1": "rightPinky1",
+     "rightPinky2": "rightPinky2",
+     "rightPinky3": "rightPinky3"
+    },
+    "rigKind": "custom",
+    "hiddenNodes": [],
+    "handBone": "rightHand",
+    "skinMaterials": [],
+    "tintMaterials": [],
+    "rightHandGripOffset": [
+     0,
+     0,
+     0
+    ]
+   },
+   "materialVariants": [
+    {
+     "name": "Street Black",
+     "colors": {
+      "primary": "#ffffff",
+      "secondary": "#ffffff",
+      "emissive": "#ffb020"
+     }
+    },
+    {
+     "name": "Neon Teal",
+     "colors": {
+      "primary": "#1fd0c0",
+      "secondary": "#ffffff",
+      "emissive": "#2af0ff"
+     }
+    },
+    {
+     "name": "Blood Orange",
+     "colors": {
+      "primary": "#ff5a14",
+      "secondary": "#ffffff",
+      "emissive": "#ff3a1a"
+     }
+    }
+   ]
+  },
+  "weapon.machete": {
+   "id": "weapon.machete",
+   "category": "weapon",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Weapons/free_realistic_modern_machete_with_uv_low-poly.glb",
+     "sha256": "6b50a939106b32a4065006f7b5b6b5375306423b9417d2e2ff5f695217e9ce27",
+     "bytes": 4058272
+    }
+   ],
+   "files": {
+    "lod0": "weapons/weapon.machete.lod0.285ba37ce7.glb"
+   },
+   "bytes": 265280,
+   "triangles": 3066,
+   "maxTextureSize": 512,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [],
+   "weapon": {
+    "length": 0.5,
+    "gripOffset": [
+     0,
+     0,
+     0
+    ],
+    "segments": [],
+    "chainBones": [],
+    "ballNode": null,
+    "tipNode": null
+   }
+  },
+  "weapon.katana": {
+   "id": "weapon.katana",
+   "category": "weapon",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Weapons/no_name_-_katana.glb",
+     "sha256": "979bda22febe62d9a72144c74e986a0f8ec58577e357b3417f4b118e76299e76",
+     "bytes": 704596
+    }
+   ],
+   "files": {
+    "lod0": "weapons/weapon.katana.lod0.11edf86be9.glb"
+   },
+   "bytes": 65100,
+   "triangles": 4320,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "removed duplicate sword/scabbards: Ailes 2.001, Ailes 2.001_0, Ailes 2.001_1, Ailes 1.001, Ailes 1.001_0, Ailes 1.001_1, Ailes 3.001, Ailes 3.001_0, Ailes 3.001_1, Cube, Cube_0, Cube_1, Cube_2, Corp.001, Corp.001_0, Corp.001_1, Corp.001_2, Corp.001_3, Corp.001_4, Cube.001, Cube.001_0, Cube.001_1, Cube.001_2",
+    "decorative \"Take 01\" clip dropped; primitives merged by material"
+   ],
+   "weapon": {
+    "length": 1,
+    "gripOffset": [
+     0,
+     0,
+     0
+    ],
+    "segments": [],
+    "chainBones": [],
+    "ballNode": null,
+    "tipNode": null
+   }
+  },
+  "weapon.morningStar": {
+   "id": "weapon.morningStar",
+   "category": "weapon",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Weapons/morning_star_low_poly.glb",
+     "sha256": "a440d525e82ac5b0cf5f0c8e1dcc3303c26aa54a3f5be87e933c75d092204296",
+     "bytes": 2588724
+    }
+   ],
+   "files": {
+    "lod0": "weapons/weapon.morningStar.lod0.19d6e7f000.glb"
+   },
+   "bytes": 314380,
+   "triangles": 4708,
+   "maxTextureSize": 512,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "chain bones renamed ms_chain_0..7, ball ms_ball"
+   ],
+   "weapon": {
+    "length": 0.93,
+    "gripOffset": [
+     0,
+     0,
+     0
+    ],
+    "segments": [],
+    "chainBones": [
+     "ms_chain_0",
+     "ms_chain_1",
+     "ms_chain_2",
+     "ms_chain_3",
+     "ms_chain_4",
+     "ms_chain_5",
+     "ms_chain_6",
+     "ms_chain_7"
+    ],
+    "ballNode": "ms_ball",
+    "tipNode": null
+   }
+  },
+  "weapon.zabimaru": {
+   "id": "weapon.zabimaru",
+   "category": "weapon",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Weapons/zabimaru_v2_-_bleach.glb",
+     "sha256": "9e50be5ef2fa2b636f843b0d2f44d2d155c692f74fb4304e838891321f7a96db",
+     "bytes": 6594976
+    }
+   ],
+   "files": {
+    "lod0": "weapons/weapon.zabimaru.lod0.7c438233df.glb"
+   },
+   "bytes": 806944,
+   "triangles": 9646,
+   "maxTextureSize": 512,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "segment centres (m): zab_seg_1=[-0.013,0.67,0.052] zab_seg_6=[1.499,1.061,0.728] zab_tip=[1.667,0.935,0.666]"
+   ],
+   "weapon": {
+    "length": 1.734,
+    "gripOffset": [
+     0,
+     0,
+     0
+    ],
+    "segments": [
+     "zab_seg_1",
+     "zab_seg_2",
+     "zab_seg_3",
+     "zab_seg_4",
+     "zab_seg_5",
+     "zab_seg_6",
+     "zab_tip"
+    ],
+    "chainBones": [],
+    "ballNode": null,
+    "tipNode": "zab_tip"
+   }
+  },
+  "starter.oni": {
+   "id": "starter.oni",
+   "category": "starter",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/Race starter/cyborg_oni.glb",
+     "sha256": "9041cea55000f5e842795969cc474e2baacdabd61db2471c5b85fa9131a5d1b3",
+     "bytes": 15855300
+    }
+   ],
+   "files": {
+    "lod0": "starter/starter.oni.lod0.b33ce75f54.glb"
+   },
+   "bytes": 6121480,
+   "triangles": 34042,
+   "maxTextureSize": 1024,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "clip keys start at t=1.0 s; runtime trims the dead time",
+    "static \"pose\" clip dropped"
+   ],
+   "starter": {
+    "clip": "oni_intro",
+    "trimStart": 1,
+    "landingTime": 3.5,
+    "gestureTime": 4.9,
+    "height": 3,
+    "handBone": "oni_hand_r"
+   },
+   "animations": [
+    "oni_intro"
+   ]
+  },
+  "crowd.mohawk": {
+   "id": "crowd.mohawk",
+   "category": "crowd",
+   "required": false,
+   "source": [
+    {
+     "path": "Assets/Audience/readyplayerme_cyberpunk.glb",
+     "sha256": "cde6cd4d6a92a5b604b08449165a97d3e52112295255543429b85fe144962306",
+     "bytes": 5613180
+    }
+   ],
+   "files": {
+    "lod0": "crowd/crowd.mohawk.lod0.c55dec4772.glb",
+    "lod1": "crowd/crowd.mohawk.lod1.ded1b403da.glb"
+   },
+   "bytes": 2125008,
+   "triangles": 18509,
+   "maxTextureSize": 512,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "LOD1 7429 triangles"
+   ],
+   "crowd": {
+    "height": 1.8,
+    "rigged": true,
+    "retargetMap": {
+     "hips": "hips",
+     "spine": "spine",
+     "chest": "chest",
+     "upperChest": "upperChest",
+     "neck": "neck",
+     "head": "head",
+     "leftShoulder": "leftShoulder",
+     "leftUpperArm": "leftUpperArm",
+     "leftLowerArm": "leftLowerArm",
+     "leftHand": "leftHand",
+     "rightShoulder": "rightShoulder",
+     "rightUpperArm": "rightUpperArm",
+     "rightLowerArm": "rightLowerArm",
+     "rightHand": "rightHand",
+     "leftUpperLeg": "leftUpperLeg",
+     "leftLowerLeg": "leftLowerLeg",
+     "leftFoot": "leftFoot",
+     "leftToes": "leftToes",
+     "rightUpperLeg": "rightUpperLeg",
+     "rightLowerLeg": "rightLowerLeg",
+     "rightFoot": "rightFoot",
+     "rightToes": "rightToes",
+     "leftThumb1": "leftThumb1",
+     "leftThumb2": "leftThumb2",
+     "leftThumb3": "leftThumb3",
+     "leftIndex1": "leftIndex1",
+     "leftIndex2": "leftIndex2",
+     "leftIndex3": "leftIndex3",
+     "leftMiddle1": "leftMiddle1",
+     "leftMiddle2": "leftMiddle2",
+     "leftMiddle3": "leftMiddle3",
+     "leftRing1": "leftRing1",
+     "leftRing2": "leftRing2",
+     "leftRing3": "leftRing3",
+     "leftPinky1": "leftPinky1",
+     "leftPinky2": "leftPinky2",
+     "leftPinky3": "leftPinky3",
+     "rightThumb1": "rightThumb1",
+     "rightThumb2": "rightThumb2",
+     "rightThumb3": "rightThumb3",
+     "rightIndex1": "rightIndex1",
+     "rightIndex2": "rightIndex2",
+     "rightIndex3": "rightIndex3",
+     "rightMiddle1": "rightMiddle1",
+     "rightMiddle2": "rightMiddle2",
+     "rightMiddle3": "rightMiddle3",
+     "rightRing1": "rightRing1",
+     "rightRing2": "rightRing2",
+     "rightRing3": "rightRing3",
+     "rightPinky1": "rightPinky1",
+     "rightPinky2": "rightPinky2",
+     "rightPinky3": "rightPinky3"
+    },
+    "tintMaterials": [
+     "Wolf3D_Outfit_Top",
+     "Wolf3D_Outfit_Bottom",
+     "Wolf3D_Hair",
+     "Wolf3D_Outfit_Footwear"
+    ],
+    "variants": 8
+   },
+   "animations": []
+  },
+  "crowd.enforcer": {
+   "id": "crowd.enforcer",
+   "category": "crowd",
+   "required": false,
+   "source": [
+    {
+     "path": "Assets/Audience/cyberpunk_character.glb",
+     "sha256": "d2f3e41be8ee3d026270d6ce184252e7e6ed6bb080ac10510b273d1f1f00fe1d",
+     "bytes": 78584864
+    }
+   ],
+   "files": {
+    "mask:material_3": "crowd/crowd.enforcer.mask.material_3.06489b73f2.ktx2",
+    "lod0": "crowd/crowd.enforcer.lod0.dbc1437aed.glb",
+    "lod1": "crowd/crowd.enforcer.lod1.838ff37064.glb"
+   },
+   "bytes": 1683129,
+   "triangles": 24500,
+   "maxTextureSize": 512,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "tint mask material_3 (nonSkin) coverage 0.6%",
+    "LOD1 9793 triangles"
+   ],
+   "crowd": {
+    "height": 1.82,
+    "rigged": true,
+    "retargetMap": {
+     "hips": "hips",
+     "spine": "spine",
+     "chest": "chest",
+     "upperChest": "upperChest",
+     "neck": "neck",
+     "head": "head",
+     "leftShoulder": "leftShoulder",
+     "leftUpperArm": "leftUpperArm",
+     "leftLowerArm": "leftLowerArm",
+     "leftHand": "leftHand",
+     "rightShoulder": "rightShoulder",
+     "rightUpperArm": "rightUpperArm",
+     "rightLowerArm": "rightLowerArm",
+     "rightHand": "rightHand",
+     "leftUpperLeg": "leftUpperLeg",
+     "leftLowerLeg": "leftLowerLeg",
+     "leftFoot": "leftFoot",
+     "leftToes": "leftToes",
+     "rightUpperLeg": "rightUpperLeg",
+     "rightLowerLeg": "rightLowerLeg",
+     "rightFoot": "rightFoot",
+     "rightToes": "rightToes",
+     "leftThumb1": "leftThumb1",
+     "leftThumb2": "leftThumb2",
+     "leftThumb3": "leftThumb3",
+     "leftIndex1": "leftIndex1",
+     "leftIndex2": "leftIndex2",
+     "leftIndex3": "leftIndex3",
+     "leftMiddle1": "leftMiddle1",
+     "leftMiddle2": "leftMiddle2",
+     "leftMiddle3": "leftMiddle3",
+     "leftRing1": "leftRing1",
+     "leftRing2": "leftRing2",
+     "leftRing3": "leftRing3",
+     "leftPinky1": "leftPinky1",
+     "leftPinky2": "leftPinky2",
+     "leftPinky3": "leftPinky3",
+     "rightThumb1": "rightThumb1",
+     "rightThumb2": "rightThumb2",
+     "rightThumb3": "rightThumb3",
+     "rightIndex1": "rightIndex1",
+     "rightIndex2": "rightIndex2",
+     "rightIndex3": "rightIndex3",
+     "rightMiddle1": "rightMiddle1",
+     "rightMiddle2": "rightMiddle2",
+     "rightMiddle3": "rightMiddle3",
+     "rightRing1": "rightRing1",
+     "rightRing2": "rightRing2",
+     "rightRing3": "rightRing3",
+     "rightPinky1": "rightPinky1",
+     "rightPinky2": "rightPinky2",
+     "rightPinky3": "rightPinky3"
+    },
+    "tintMaterials": [],
+    "variants": 6
+   },
+   "animations": []
+  },
+  "crowd.ruffle": {
+   "id": "crowd.ruffle",
+   "category": "crowd",
+   "required": false,
+   "source": [
+    {
+     "path": "Assets/Audience/rigged_female_fashion_character_in_ruffle_dress.glb",
+     "sha256": "4aabf51a770f8bc70841b5011188061d132b42cb2dcb426d46d5ab1b378bd44f",
+     "bytes": 38193600
+    }
+   ],
+   "files": {
+    "mask:Material.001": "crowd/crowd.ruffle.mask.Material_001.bf11355af0.ktx2",
+    "lod0": "crowd/crowd.ruffle.lod0.5fe5c57d84.glb",
+    "lod1": "crowd/crowd.ruffle.lod1.081a151db8.glb"
+   },
+   "bytes": 1886348,
+   "triangles": 22028,
+   "maxTextureSize": 512,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "LOD0 simplified 442569 -> 22028 triangles",
+    "tint mask Material.001 (nonSkin) coverage 10.8%",
+    "LOD1 8799 triangles"
+   ],
+   "crowd": {
+    "height": 1.7,
+    "rigged": true,
+    "retargetMap": {
+     "hips": "hips",
+     "spine": "spine",
+     "chest": "chest",
+     "upperChest": "upperChest",
+     "neck": "neck",
+     "head": "head",
+     "leftShoulder": "leftShoulder",
+     "leftUpperArm": "leftUpperArm",
+     "leftLowerArm": "leftLowerArm",
+     "leftHand": "leftHand",
+     "rightShoulder": "rightShoulder",
+     "rightUpperArm": "rightUpperArm",
+     "rightLowerArm": "rightLowerArm",
+     "rightHand": "rightHand",
+     "leftUpperLeg": "leftUpperLeg",
+     "leftLowerLeg": "leftLowerLeg",
+     "leftFoot": "leftFoot",
+     "leftToes": "leftToes",
+     "rightUpperLeg": "rightUpperLeg",
+     "rightLowerLeg": "rightLowerLeg",
+     "rightFoot": "rightFoot",
+     "rightToes": "rightToes",
+     "leftThumb1": "leftThumb1",
+     "leftThumb2": "leftThumb2",
+     "leftThumb3": "leftThumb3",
+     "leftIndex1": "leftIndex1",
+     "leftIndex2": "leftIndex2",
+     "leftIndex3": "leftIndex3",
+     "leftMiddle1": "leftMiddle1",
+     "leftMiddle2": "leftMiddle2",
+     "leftMiddle3": "leftMiddle3",
+     "leftRing1": "leftRing1",
+     "leftRing2": "leftRing2",
+     "leftRing3": "leftRing3",
+     "leftPinky1": "leftPinky1",
+     "leftPinky2": "leftPinky2",
+     "leftPinky3": "leftPinky3",
+     "rightThumb1": "rightThumb1",
+     "rightThumb2": "rightThumb2",
+     "rightThumb3": "rightThumb3",
+     "rightIndex1": "rightIndex1",
+     "rightIndex2": "rightIndex2",
+     "rightIndex3": "rightIndex3",
+     "rightMiddle1": "rightMiddle1",
+     "rightMiddle2": "rightMiddle2",
+     "rightMiddle3": "rightMiddle3",
+     "rightRing1": "rightRing1",
+     "rightRing2": "rightRing2",
+     "rightRing3": "rightRing3",
+     "rightPinky1": "rightPinky1",
+     "rightPinky2": "rightPinky2",
+     "rightPinky3": "rightPinky3"
+    },
+    "tintMaterials": [],
+    "variants": 6
+   },
+   "animations": [
+    "idle"
+   ]
+  },
+  "crowd.horned": {
+   "id": "crowd.horned",
+   "category": "crowd",
+   "required": false,
+   "source": [
+    {
+     "path": "Assets/Audience/female_character.glb",
+     "sha256": "1f11170c3ae12ce964bf40487a6301a583bbb844b9bde8238a3196ec8012dc50",
+     "bytes": 13707252
+    }
+   ],
+   "files": {
+    "mask:initialShadingGroup": "crowd/crowd.horned.mask.initialShadingGroup.1332c1018e.ktx2",
+    "lod0": "crowd/crowd.horned.lod0.324ab139b0.glb",
+    "lod1": "crowd/crowd.horned.lod1.045029c3c8.glb"
+   },
+   "bytes": 1002134,
+   "triangles": 25575,
+   "maxTextureSize": 512,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "whole-body BLEND material converted to MASK (no transparent sorting in crowds)",
+    "static (unrigged) figure: mid/far crowd and impostors only",
+    "tint mask initialShadingGroup (nonSkin) coverage 24.4%",
+    "LOD1 8949 triangles"
+   ],
+   "crowd": {
+    "height": 1.95,
+    "rigged": false,
+    "retargetMap": {},
+    "tintMaterials": [],
+    "variants": 4
+   },
+   "animations": []
+  },
+  "city.tunnel": {
+   "id": "city.tunnel",
+   "category": "city",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/City/future_tunnel.glb",
+     "sha256": "c17fccca004939df8d3f5ebb91570765405f40fe574c984ad8f8327ccbf46853",
+     "bytes": 2178168
+    }
+   ],
+   "files": {
+    "lod0": "city/city.tunnel.lod0.43a8327d19.glb"
+   },
+   "bytes": 641188,
+   "triangles": 55344,
+   "maxTextureSize": 1024,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "module length 29.38 m, inner width 12.08 m, height 4.39 m"
+   ],
+   "city": {
+    "size": [
+     12.079,
+     4.393,
+     29.385
+    ],
+    "anchor": [
+     0,
+     0,
+     0
+    ],
+    "emissiveMaterials": [
+     "TubeLed",
+     "TunnelLed"
+    ]
+   }
+  },
+  "city.bridgeKit": {
+   "id": "city.bridgeKit",
+   "category": "city",
+   "required": true,
+   "source": [
+    {
+     "path": "Assets/City/bridges_and_street_assets.glb",
+     "sha256": "835e07ece43e3a4d275446293e42ff5f85187336b053e5ab72900d21b0d3d6e1",
+     "bytes": 11218332
+    }
+   ],
+   "files": {
+    "lod0": "city/city.bridgeKit.lod0.6f6895d8ba.glb"
+   },
+   "bytes": 2257920,
+   "triangles": 239967,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "clustered into 21 modules"
+   ],
+   "city": {
+    "size": [
+     87.822,
+     13.531,
+     58.597
+    ],
+    "anchor": [
+     0,
+     0,
+     0
+    ],
+    "modules": [
+     {
+      "name": "kit_00",
+      "size": [
+       32.22,
+       7.46,
+       56
+      ],
+      "center": [
+       12.71,
+       0.84,
+       -10.12
+      ],
+      "tris": 114097,
+      "tags": [
+       "bridge"
+      ]
+     },
+     {
+      "name": "kit_01",
+      "size": [
+       11.02,
+       9.32,
+       24.49
+      ],
+      "center": [
+       -19.17,
+       -0.56,
+       -28.47
+      ],
+      "tris": 44575,
+      "tags": [
+       "bridge"
+      ]
+     },
+     {
+      "name": "kit_02",
+      "size": [
+       5.61,
+       7.2,
+       9
+      ],
+      "center": [
+       -9.71,
+       1.02,
+       0.73
+      ],
+      "tris": 18744,
+      "tags": [
+       "structure"
+      ]
+     },
+     {
+      "name": "kit_03",
+      "size": [
+       3.68,
+       7.2,
+       9.56
+      ],
+      "center": [
+       -16.92,
+       1.02,
+       0.42
+      ],
+      "tris": 19398,
+      "tags": [
+       "structure"
+      ]
+     },
+     {
+      "name": "kit_04",
+      "size": [
+       3.8,
+       1.59,
+       10.57
+      ],
+      "center": [
+       -52.23,
+       -0.82,
+       -7.01
+      ],
+      "tris": 1940,
+      "tags": [
+       "deck"
+      ]
+     },
+     {
+      "name": "kit_05",
+      "size": [
+       3.21,
+       1.51,
+       10.71
+      ],
+      "center": [
+       -40.62,
+       -0.77,
+       -6.6
+      ],
+      "tris": 1952,
+      "tags": [
+       "deck"
+      ]
+     },
+     {
+      "name": "kit_06",
+      "size": [
+       3.29,
+       1.76,
+       10.45
+      ],
+      "center": [
+       -57.36,
+       -0.9,
+       -6.73
+      ],
+      "tris": 1808,
+      "tags": [
+       "deck"
+      ]
+     },
+     {
+      "name": "kit_07",
+      "size": [
+       3.24,
+       1.49,
+       10.25
+      ],
+      "center": [
+       -46.12,
+       -0.77,
+       -6.64
+      ],
+      "tris": 1892,
+      "tags": [
+       "deck"
+      ]
+     },
+     {
+      "name": "kit_08",
+      "size": [
+       3.79,
+       1.21,
+       9.22
+      ],
+      "center": [
+       -56.54,
+       -1.39,
+       4.65
+      ],
+      "tris": 5000,
+      "tags": [
+       "deck"
+      ]
+     },
+     {
+      "name": "kit_09",
+      "size": [
+       5.04,
+       1.19,
+       7.1
+      ],
+      "center": [
+       -24.09,
+       0.16,
+       -4.85
+      ],
+      "tris": 2652,
+      "tags": [
+       "deck"
+      ]
+     },
+     {
+      "name": "kit_10",
+      "size": [
+       3.46,
+       5.68,
+       5.16
+      ],
+      "center": [
+       -23.82,
+       -4.77,
+       5.15
+      ],
+      "tris": 7231,
+      "tags": [
+       "structure"
+      ]
+     },
+     {
+      "name": "kit_11",
+      "size": [
+       2.98,
+       1.53,
+       7.31
+      ],
+      "center": [
+       -46.51,
+       -0.57,
+       4.8
+      ],
+      "tris": 468,
+      "tags": [
+       "structure"
+      ]
+     },
+     {
+      "name": "kit_12",
+      "size": [
+       2.9,
+       1.33,
+       7.18
+      ],
+      "center": [
+       -42.13,
+       -0.7,
+       4.65
+      ],
+      "tris": 574,
+      "tags": [
+       "structure"
+      ]
+     },
+     {
+      "name": "kit_13",
+      "size": [
+       3.07,
+       1.22,
+       6.82
+      ],
+      "center": [
+       -51.57,
+       -0.69,
+       4.58
+      ],
+      "tris": 4686,
+      "tags": [
+       "deck"
+      ]
+     },
+     {
+      "name": "kit_14",
+      "size": [
+       3.59,
+       1.19,
+       6.09
+      ],
+      "center": [
+       -29.86,
+       0.16,
+       -5.36
+      ],
+      "tris": 2640,
+      "tags": [
+       "deck"
+      ]
+     },
+     {
+      "name": "kit_15",
+      "size": [
+       3.22,
+       6.04,
+       1.14
+      ],
+      "center": [
+       -34.56,
+       0.99,
+       -5.41
+      ],
+      "tris": 108,
+      "tags": [
+       "pillar"
+      ]
+     },
+     {
+      "name": "kit_16",
+      "size": [
+       3.2,
+       4.41,
+       4.29
+      ],
+      "center": [
+       -28.66,
+       -3.76,
+       4.36
+      ],
+      "tris": 8050,
+      "tags": [
+       "pillar"
+      ]
+     },
+     {
+      "name": "kit_17",
+      "size": [
+       2.98,
+       0.51,
+       4.61
+      ],
+      "center": [
+       -34.6,
+       -0.12,
+       4.12
+      ],
+      "tris": 2084,
+      "tags": [
+       "structure"
+      ]
+     },
+     {
+      "name": "kit_18",
+      "size": [
+       2.78,
+       0.57,
+       2.08
+      ],
+      "center": [
+       -34.6,
+       -0.77,
+       8.24
+      ],
+      "tris": 1144,
+      "tags": [
+       "debris"
+      ]
+     },
+     {
+      "name": "kit_19",
+      "size": [
+       3.01,
+       0.44,
+       1.52
+      ],
+      "center": [
+       -34.31,
+       -0.3,
+       0.21
+      ],
+      "tris": 894,
+      "tags": [
+       "debris"
+      ]
+     },
+     {
+      "name": "kit_20",
+      "size": [
+       0.42,
+       0.25,
+       0.62
+      ],
+      "center": [
+       3.9,
+       0.87,
+       -26.26
+      ],
+      "tris": 30,
+      "tags": [
+       "debris"
+      ]
+     }
+    ]
+   }
+  },
+  "city.timesSquare": {
+   "id": "city.timesSquare",
+   "category": "city",
+   "required": false,
+   "source": [
+    {
+     "path": "Assets/City/times square.glb",
+     "sha256": "7b3965fc54e4d42bbce988d1147f7737a695e37714af26ea38d4dbc6f390c6e9",
+     "bytes": 164191716
+    }
+   ],
+   "files": {
+    "lod0": "city/city.timesSquare.lod0.d4d1aa5928.glb",
+    "lod1": "city/city.timesSquare.lod1.1fe50eec2d.glb"
+   },
+   "bytes": 18445072,
+   "triangles": 657528,
+   "maxTextureSize": 2048,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "road/sidewalk mesh removed (Object_32)",
+    "3D neon brand lettering removed (1 primitive)",
+    "1744 small 3D sign letter/logo islands removed from billboard geometry",
+    "eyewear store lettering removed (60 pieces)",
+    "themed restaurant lettering removed (8 pieces)",
+    "fashion store lettering removed (12 pieces)",
+    "billboard atlases (real trademarks) replaced with generated fictional ads",
+    "all-black 8K screen texture dropped; screen/glass surfaces are dark glossy glass",
+    "Material.009: 17 real storefront trademark regions covered with fictional signs",
+    "Material.005: 1 real storefront trademark regions covered with fictional signs",
+    "duplicate 8K texture (Material.004) redirected to its 4K twin",
+    "spatially partitioned into 57 cells (60 m)",
+    "LOD0 simplified 1127240 -> 657528 triangles",
+    "LOD1 326988 triangles"
+   ],
+   "city": {
+    "size": [
+     596.117,
+     410.747,
+     314.84
+    ],
+    "anchor": [
+     0,
+     0,
+     0
+    ],
+    "cells": 57,
+    "emissiveMaterials": [
+     "Material.007",
+     "Material.001",
+     "Material.008",
+     "Material.002"
+    ]
+   }
+  },
+  "city.commercial": {
+   "id": "city.commercial",
+   "category": "city",
+   "required": false,
+   "source": [
+    {
+     "path": "Assets/City/cyberpunk_city_-_1.glb",
+     "sha256": "25a02f40fc00c70c250809041730f4cf866722c4324f8c250d9c1ac9a8c973fa",
+     "bytes": 4415176
+    }
+   ],
+   "files": {
+    "lod0": "city/city.commercial.lod0.536e1244cd.glb",
+    "lod1": "city/city.commercial.lod1.f143a8712a.glb"
+   },
+   "bytes": 1335416,
+   "triangles": 64171,
+   "maxTextureSize": 0,
+   "textureFormat": "none",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "merged by material (untextured stylised diorama)",
+    "LOD1 49708 triangles"
+   ],
+   "city": {
+    "size": [
+     229.467,
+     77.673,
+     220.714
+    ],
+    "anchor": [
+     0,
+     0,
+     0
+    ],
+    "emissiveMaterials": [
+     "Meshpart8Mtl",
+     "Meshpart13Mtl",
+     "Meshpart14Mtl",
+     "Meshpart16Mtl",
+     "Meshpart17Mtl",
+     "Meshpart22Mtl",
+     "Meshpart26Mtl",
+     "Meshpart28Mtl"
+    ]
+   }
+  },
+  "city.industrial": {
+   "id": "city.industrial",
+   "category": "city",
+   "required": false,
+   "source": [
+    {
+     "path": "Assets/City/post-apocalyptic_city.glb",
+     "sha256": "32348aab8020dcf0381459026a000e2cf7061a17dcd272a0c9e2f5168d76cef2",
+     "bytes": 68791340
+    }
+   ],
+   "files": {
+    "lod0": "city/city.industrial.lod0.3f9be4e344.glb",
+    "lod1": "city/city.industrial.lod1.c65a93e815.glb"
+   },
+   "bytes": 10095484,
+   "triangles": 172912,
+   "maxTextureSize": 1024,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "road strips removed (Object_8); merged by material",
+    "LOD0 simplified 278456 -> 172912 triangles",
+    "LOD1 115940 triangles"
+   ],
+   "city": {
+    "size": [
+     71.143,
+     17.823,
+     64.21
+    ],
+    "anchor": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "city.skyline": {
+   "id": "city.skyline",
+   "category": "city",
+   "required": false,
+   "source": [
+    {
+     "path": "Assets/City/cyberpunk_city.glb",
+     "sha256": "d76d1c0f2c9b5c1202e8bc416451e27d7c1bea104e30cb43f43933f56b1919f3",
+     "bytes": 125005672
+    }
+   ],
+   "files": {
+    "lod0": "city/city.skyline.lod0.5d10a870ea.glb",
+    "lod1": "city/city.skyline.lod1.7065162309.glb"
+   },
+   "bytes": 1084480,
+   "triangles": 85693,
+   "maxTextureSize": 512,
+   "textureFormat": "ktx2",
+   "orientation": {
+    "forward": "+Z",
+    "up": "+Y",
+    "units": "m"
+   },
+   "notes": [
+    "16 LINES/edge primitives dropped; ground plane removed; distant skyline only",
+    "LOD0 simplified 1788188 -> 85693 triangles",
+    "LOD1 34012 triangles"
+   ],
+   "city": {
+    "size": [
+     1301.478,
+     425.897,
+     2600
+    ],
+    "anchor": [
+     0,
+     0,
+     0
+    ]
+   }
+  }
+ },
+ "missingSources": [],
+ "warnings": []
+}

@@ -1,0 +1,23 @@
+# Raw source assets and local-only material never leave this machine: the deployment serves the
+# optimised runtime assets from public/runtime-assets only.
+Assets
+HANDOFF
+.certs
+.pipeline-cache
+.qa.tmp
+.viewer.tmp
+.vercel
+dist
+node_modules
+docs
+tools
+tests
+ASSET_AUDIT.md
+ASSET_MANIFEST.json
+CLAUDE_START_PROMPT.md
+IMPLEMENTATION_CONTRACT.md
+PROJECT_BRAIN.md
+PRE_DEPLOYMENT_AUDIT.md
+
+# Promo reel pipeline (source music, renders, its own node_modules): never deployed.
+promo

@@ -1,0 +1,35 @@
+# Dependencies and build output (reproduced by `npm ci` and `npm run build`)
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Raw source models (several exceed GitHub's 100 MB file limit). The optimised runtime assets the
+# game needs are committed in public/runtime-assets/; see CREDITS.md for the originals.
+Assets/
+
+# Secrets, credentials and the local HTTPS certificate authority
+.env
+.env.*
+.certs/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+.vercel/
+.npmrc
+
+# Local caches and QA scratch
+.pipeline-cache/
+.qa.tmp/
+.viewer.tmp/
+promo/
+*.log
+
+# Machine-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+.claude/
