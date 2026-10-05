@@ -10,6 +10,8 @@ Assets/
 # Secrets, credentials and the local HTTPS certificate authority
 .env
 .env.*
+# Public client build values only (VITE_*, never secrets).
+!.env.production
 .certs/
 *.pem
 *.key

@@ -247,7 +247,9 @@ async function main(): Promise<void> {
     const deployable = ['src', 'api', 'public/sw.js', 'index.html', 'vercel.json', 'package.json', 'README.md'].flatMap(walk);
     const secretRe = /(rediss?:\/\/[^\s'"`$]*:[^\s'"`$@]+@|AKIA[0-9A-Z]{16}|vercel_[A-Za-z0-9]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY)/;
     const leaks = deployable.filter((f) => secretRe.test(fs.readFileSync(path.join(ROOT, f), 'utf8')));
-    const envFiles = fs.readdirSync(ROOT).filter((f) => /^\.env/.test(f));
+    // .env.production may hold public client build values (VITE_*) only; any other .env file, or a non-VITE_ entry, fails.
+    const publicEnvOnly = (f: string) => fs.readFileSync(path.join(ROOT, f), 'utf8').split(/\r?\n/).every((l) => !l.trim() || l.startsWith('#') || /^VITE_[A-Z0-9_]+=/.test(l));
+    const envFiles = fs.readdirSync(ROOT).filter((f) => /^\.env/.test(f) && !(f === '.env.production' && publicEnvOnly(f)));
     facts.vercel = {
       ok: vj.buildCommand === 'npm run build:web' && vj.outputDirectory === 'dist/client' && !!vj.functions['api/relay.mjs'] && vj.rewrites.some((r) => r.source.startsWith('/api/relay')) && ['Assets', '.certs', 'HANDOFF'].every((x) => ignore.includes(x)) && !leaks.length && !envFiles.length && fs.existsSync(path.join(ROOT, 'dist/client/index.html')),
       detail: `vercel.json: build \`${vj.buildCommand}\` -> ${vj.outputDirectory}, function api/relay.mjs, rewrites ${vj.rewrites.map((r) => r.source).join(', ')}; .vercelignore excludes Assets, HANDOFF, .certs; secret scan of ${deployable.length} deployable source files: ${leaks.length ? `FOUND in ${leaks.join(', ')}` : 'none'}; .env files: ${envFiles.length ? envFiles.join(', ') : 'none'} (REDIS_URL comes from the Vercel project environment)`,
