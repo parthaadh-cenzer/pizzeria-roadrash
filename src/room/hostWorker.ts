@@ -14,7 +14,7 @@ scope.onmessage = async (e: MessageEvent<ToWorker>) => {
   if (m.k === 'init') {
     try {
       await initRapier();
-      room = new HostedRoom(m.origin, (o) => scope.postMessage(o), { room: m.room, secret: m.secret });
+      room = new HostedRoom(m.origin, (o) => scope.postMessage(o), { room: m.room, secret: m.secret, relay: m.relay });
     } catch (err) {
       scope.postMessage({ k: 'error', message: `The room could not start: ${err instanceof Error ? err.message : String(err)}` });
     }

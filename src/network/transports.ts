@@ -170,7 +170,7 @@ export class RelayClientSocket extends FrameSocket {
 
 /** Messages between the host tab and its room worker. */
 export type ToWorker =
-  | { k: 'init'; origin: string; room: string | null; secret: string | null }
+  | { k: 'init'; origin: string; relay: string; room: string | null; secret: string | null }
   | { k: 'c2s'; ev: string; args: unknown[]; ack?: number }
   | { k: 'close'; reason: string };
 export type FromWorker = import('../room/HostedRoom.js').RoomOutput;
@@ -181,7 +181,7 @@ export class WorkerClientSocket extends FrameSocket {
   code: string | null = null;
   relayUp = false;
 
-  constructor(worker: Worker, init: { origin: string; room: string | null; secret: string | null }) {
+  constructor(worker: Worker, init: { origin: string; relay: string; room: string | null; secret: string | null }) {
     super();
     this.worker = worker;
     worker.onmessage = (e: MessageEvent<FromWorker>) => {

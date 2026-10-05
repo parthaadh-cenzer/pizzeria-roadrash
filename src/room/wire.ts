@@ -52,6 +52,16 @@ export function joinUrlFor(origin: string, code: string): string {
 /** Relay socket path (same origin). */
 export const RELAY_PATH = '/api/relay/socket.io';
 
+/**
+ * Origin of the room relay: the configured relay URL (build-time VITE_RELAY_URL, for a client
+ * hosted apart from its relay) or the page's own origin (relay deployed alongside the client).
+ */
+export function relayOriginFor(pageOrigin: string, configured?: string | null): string {
+  const c = (configured ?? '').trim();
+  if (!c) return pageOrigin;
+  return new URL(c).origin;
+}
+
 // ------------------------------------------------------------------ frames
 /** peer -> host: a client-to-server event (ack id when the sender expects a reply). */
 export interface PeerFrame {

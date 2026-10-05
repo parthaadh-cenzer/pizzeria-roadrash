@@ -1,0 +1,19 @@
+# Render Blueprint: the multiplayer room relay as one long-running Node web service
+# (Socket.IO over WebSocket at /api/relay/socket.io). Rooms are held in memory on this single
+# instance; running more than one instance requires REDIS_URL. The game client is static and
+# hosted elsewhere (built with VITE_RELAY_URL pointing here).
+services:
+  - type: web
+    name: pizzeria-roadrash-relay
+    runtime: node
+    plan: free
+    buildCommand: npm ci --omit=dev --ignore-scripts
+    startCommand: node relay-server.mjs
+    healthCheckPath: /api/relay/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      # Client origins allowed to connect (comma-separated).
+      - key: RELAY_ALLOWED_ORIGINS
+        value: https://games.staige.world,https://play.games.staige.world

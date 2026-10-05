@@ -29,12 +29,15 @@ export class HostedRoom {
   private silenceTimer: ReturnType<typeof setInterval>;
   code: string | null;
   private secret: string | null;
+  /** Relay origin (defaults to the page origin, which also forms the join link). */
+  private readonly relayOrigin: string;
 
   constructor(
     private readonly origin: string,
     private readonly out: (m: RoomOutput) => void,
-    opts: { room?: string | null; secret?: string | null } = {},
+    opts: { room?: string | null; secret?: string | null; relay?: string } = {},
   ) {
+    this.relayOrigin = opts.relay ?? origin;
     this.code = opts.room ?? null;
     this.secret = opts.secret ?? null;
     const assets: AssetStatus = { ok: true, missingRequired: [], missingOptional: [], manifestVersion: null };
@@ -100,7 +103,7 @@ export class HostedRoom {
 
   private connectRelay(): void {
     const query = () => (this.code && this.secret ? { role: 'host', room: this.code, secret: this.secret } : { role: 'host' });
-    const r = io(this.origin, { path: RELAY_PATH, transports: ['websocket'], reconnection: true, reconnectionDelay: 500, reconnectionDelayMax: 3000, query: query(), forceNew: true });
+    const r = io(this.relayOrigin, { path: RELAY_PATH, transports: ['websocket'], reconnection: true, reconnectionDelay: 500, reconnectionDelayMax: 3000, query: query(), forceNew: true });
     this.relay = r;
     r.on('room', (m: { code: string; secret: string }) => {
       const reclaimed = this.code === m.code;

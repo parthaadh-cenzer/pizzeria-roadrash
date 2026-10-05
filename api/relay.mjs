@@ -311,7 +311,14 @@ function randomSecret() {
 }
 
 // src/server/relay/relayServer.ts
-function attachRelay(servers, broker = brokerFromEnv(), opts = {}) {
+function parseAllowedOrigins(v) {
+  return (v ?? "").split(",").map((s) => s.trim().replace(/\/+$/, "")).filter(Boolean);
+}
+function originAllowed(origin, allowed) {
+  if (!allowed.length) return true;
+  return !!origin && allowed.includes(origin);
+}
+function attachRelay(servers, broker = brokerFromEnv(), opts = {}, allowedOrigins = parseAllowedOrigins(process.env.RELAY_ALLOWED_ORIGINS)) {
   const io = new Server({
     path: RELAY_PATH,
     // Vercel Functions carry Socket.IO over WebSocket only (no HTTP long-polling).
@@ -319,6 +326,9 @@ function attachRelay(servers, broker = brokerFromEnv(), opts = {}) {
     serveClient: false,
     cors: { origin: false },
     maxHttpBufferSize: 256 * 1024,
+    // WebSocket upgrades are not subject to CORS: browsers send Origin, and the relay only admits
+    // the configured client origins (RELAY_ALLOWED_ORIGINS) when that list is set.
+    allowRequest: (req, cb) => cb(null, originAllowed(req.headers.origin, allowedOrigins)),
     pingInterval: 1e4,
     pingTimeout: 12e3
   });

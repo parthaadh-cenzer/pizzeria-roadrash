@@ -6,7 +6,7 @@ import { DEFAULT_RIDER_ID } from '../shared/ids.js';
 import type { LobbyStateMsg, LoadoutMsg, RaceStartMsg, ResultsMsg } from '../shared/protocol.js';
 import { Net } from '../network/Net.js';
 import { RelayClientSocket, WorkerClientSocket } from '../network/transports.js';
-import { joinUrlFor, roomCodeFromUrl } from '../room/wire.js';
+import { joinUrlFor, roomCodeFromUrl, relayOriginFor } from '../room/wire.js';
 import QRCode from 'qrcode';
 import { AssetStore } from '../render/AssetStore.js';
 import { RenderCore } from '../render/RenderCore.js';
@@ -162,7 +162,7 @@ export class App {
     this.audio.unlock();
     this.resetNet();
     const worker = new Worker(new URL('../room/hostWorker.ts', import.meta.url), { type: 'module' });
-    const sock = new WorkerClientSocket(worker, { origin: location.origin, room: null, secret: null });
+    const sock = new WorkerClientSocket(worker, { origin: location.origin, relay: RELAY_ORIGIN, room: null, secret: null });
     this.roomHostSocket = sock;
     this.net = new Net(this.device.mobile ? 'mobile' : 'desktop', sock);
     this.wireNet();
@@ -184,7 +184,7 @@ export class App {
   private joinRoom(code: string): void {
     this.audio.unlock();
     this.resetNet();
-    const sock = new RelayClientSocket(code);
+    const sock = new RelayClientSocket(code, RELAY_ORIGIN);
     this.net = new Net(this.device.mobile ? 'mobile' : 'desktop', sock);
     this.roomCode = code;
     this.wireNet();
@@ -563,6 +563,9 @@ export class App {
 }
 
 /** LAN mode when a local host answers /api/info; otherwise the public (hosted) deployment. */
+/** Where hosted rooms meet (see relayOriginFor). */
+const RELAY_ORIGIN = relayOriginFor(location.origin, import.meta.env.VITE_RELAY_URL as string | undefined);
+
 async function detectMode(params: URLSearchParams): Promise<'lan' | 'hosted'> {
   const forced = params.get('net');
   if (forced === 'hosted' || forced === 'lan') return forced;

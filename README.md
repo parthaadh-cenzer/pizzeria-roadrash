@@ -26,7 +26,9 @@ Vite, TypeScript).
   WebSocket relay `api/relay.mjs` (Socket.IO at `/api/relay/socket.io`, a Vercel Function;
   prebuilt in the repo, regenerate with `npm run build:relay`) and, across several function
   instances, a Redis URL in `REDIS_URL`. The race itself runs in the host's browser tab; the
-  relay only forwards messages. Alternatively, `npm run build && npm start` runs a self-contained
+  relay only forwards messages. A client hosted apart from the relay is built with
+  `VITE_RELAY_URL=<relay base URL> npm run build:web` (see "Standalone relay" below).
+  Alternatively, `npm run build && npm start` runs a self-contained
   LAN host (Node.js, HTTP 7373) that serves the game and the room authority.
 - **No secrets** are in the repository: deployment-specific values come from environment
   variables.
@@ -132,6 +134,20 @@ npx vercel deploy --prod
 Function connections are recycled at the platform's maximum duration (300 s by default). Clients
 reconnect to the relay automatically, and the room keeps its state in the host tab, so a race
 carries on.
+
+## Standalone relay (long-running Node service)
+
+The same relay also runs as one persistent Node process: `node relay-server.mjs` (or
+`npm run start:relay`) after `npm ci --omit=dev`. `render.yaml` is a ready Render Blueprint for it.
+
+| Variable | Where | Purpose |
+|---|---|---|
+| `PORT` | relay | Listening port (default 8080). |
+| `RELAY_ALLOWED_ORIGINS` | relay | Comma-separated client origins allowed to connect (for example `https://games.staige.world,https://play.games.staige.world`). Unset = any origin (local development). Requests without a matching `Origin` are refused. |
+| `REDIS_URL` | relay | Only for more than one relay instance. A single instance keeps rooms in memory; after a restart the host tab reclaims its room and players reconnect. |
+| `VITE_RELAY_URL` | client build | Relay base URL when the client is hosted on another origin. Unset = the page's own origin. Join links and QR codes always use the page origin. |
+
+Health check: `GET /api/relay/health` → `{ "ok": true, "broker": "memory" | "redis", "rooms": n }`.
 
 ## Troubleshooting
 

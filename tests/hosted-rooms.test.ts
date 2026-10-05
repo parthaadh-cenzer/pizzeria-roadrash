@@ -10,9 +10,10 @@ import { initRapier } from '../src/physics/CrashWorld.js';
 import { HostedRoom, type RoomOutput } from '../src/room/HostedRoom.js';
 import { Session, type RoomServer } from '../src/room/Session.js';
 import { VirtualRoomServer, VirtualRoomSocket } from '../src/room/VirtualSocket.js';
-import { joinUrlFor, normalizeRoomCode, roomCodeFromUrl, newRoomCode, ROOM_CODE_LENGTH, encodeWire, decodeWire } from '../src/room/wire.js';
+import { joinUrlFor, normalizeRoomCode, roomCodeFromUrl, newRoomCode, ROOM_CODE_LENGTH, encodeWire, decodeWire, relayOriginFor, RELAY_PATH } from '../src/room/wire.js';
 import { MemoryBroker } from '../src/server/relay/Broker.js';
-import { attachRelay, normalizeRelayUrl } from '../src/server/relay/relayServer.js';
+import { attachRelay, normalizeRelayUrl, originAllowed, parseAllowedOrigins } from '../src/server/relay/relayServer.js';
+import { io as ioClient } from 'socket.io-client';
 import { RelayClientSocket } from '../src/network/transports.js';
 import { PROTOCOL_VERSION, type LobbyStateMsg, type OwnStateMsg, type RaceStartMsg, type WelcomeMsg } from '../src/shared/protocol.js';
 
@@ -117,6 +118,32 @@ describe('room codes and join links', () => {
   it('the relay answers on the full or function-relative Socket.IO path', () => {
     expect(normalizeRelayUrl('/api/relay/socket.io/?EIO=4')).toBe('/api/relay/socket.io/?EIO=4');
     expect(normalizeRelayUrl('/socket.io/?EIO=4&transport=websocket')).toBe('/api/relay/socket.io/?EIO=4&transport=websocket');
+  });
+
+  it('a client hosted apart from its relay uses the configured relay origin; join links keep the page origin', () => {
+    expect(relayOriginFor('https://game.example', undefined)).toBe('https://game.example');
+    expect(relayOriginFor('https://game.example', '  ')).toBe('https://game.example');
+    expect(relayOriginFor('https://game.example', 'https://relay.example/')).toBe('https://relay.example');
+  });
+
+  it('the relay admits only the configured client origins when a list is set', async () => {
+    expect(parseAllowedOrigins(' https://a.example/, https://b.example ,')).toEqual(['https://a.example', 'https://b.example']);
+    expect(originAllowed(undefined, [])).toBe(true);
+    expect(originAllowed('https://evil.example', ['https://a.example'])).toBe(false);
+    expect(originAllowed(undefined, ['https://a.example'])).toBe(false);
+    const s = http.createServer();
+    attachRelay([s], new MemoryBroker(), {}, ['https://a.example']);
+    await new Promise<void>((r) => s.listen(0, '127.0.0.1', r));
+    const url = `http://127.0.0.1:${(s.address() as AddressInfo).port}`;
+    const tryOrigin = (origin: string) =>
+      new Promise<string>((resolve) => {
+        const c = ioClient(url, { path: RELAY_PATH, transports: ['websocket'], forceNew: true, reconnection: false, query: { role: 'host' }, extraHeaders: { origin } });
+        c.on('room', () => (c.close(), resolve('room')));
+        c.on('connect_error', () => (c.close(), resolve('refused')));
+      });
+    expect(await tryOrigin('https://a.example')).toBe('room');
+    expect(await tryOrigin('https://evil.example')).toBe('refused');
+    s.close();
   });
 });
 
